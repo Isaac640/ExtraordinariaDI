@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom.Compiler;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -29,39 +30,39 @@ namespace UTR_E3.Eventos_y_sus_parámetros__lógica_de_negocio
             switch (numero)
             {
                 case "1":
-                    txtCalc.Text = txtCalc.Text + 1 + "";
+                    txtCalc.Text += 1;
                     break;
                 case "2":
-                    txtCalc.Text = txtCalc.Text + 2 + "";
+                    txtCalc.Text += 2;
                     break;
                 case "3":
-                    txtCalc.Text = txtCalc.Text + 3 + "";
+                    txtCalc.Text += 3;
                     break;
                 case "4":
-                    txtCalc.Text = txtCalc.Text + 4 + "";
+                    txtCalc.Text += 4;
                     break;
                 case "5":
-                    txtCalc.Text = txtCalc.Text + 5 + "";
+                    txtCalc.Text += 5;
                     break;
                 case "6":
-                    txtCalc.Text = txtCalc.Text + 6 + "";
+                    txtCalc.Text += 6;
                     break;
                 case "7":
-                    txtCalc.Text = txtCalc.Text + 7 + "";
+                    txtCalc.Text += 7;
                     break;
                 case "8":
-                    txtCalc.Text = txtCalc.Text + 8 + "";
+                    txtCalc.Text += 8;
                     break;
                 case "9":
-                    txtCalc.Text = txtCalc.Text + 9 + "";
+                    txtCalc.Text += 9;
                     break;
                 case "0":
-                    txtCalc.Text = txtCalc.Text + 0 + "";
+                    txtCalc.Text += 0;
                     break;
                 case ",":
                     if (!txtCalc.Text.Contains(","))
                     {
-                        txtCalc.Text = txtCalc.Text + ",";
+                        txtCalc.Text += ",";
                     }
                     break;
 
@@ -93,7 +94,7 @@ namespace UTR_E3.Eventos_y_sus_parámetros__lógica_de_negocio
                     _calculadora.Operacion = OperacionEnum.Division;
                     break;
             }
-            txtCalc.Text = "";
+            txtCalc.Text = string.Empty;
         }
 
         //MISC
@@ -111,7 +112,7 @@ namespace UTR_E3.Eventos_y_sus_parámetros__lógica_de_negocio
 
         private void btnBorrar_Click(object sender, EventArgs e)
         {
-            txtCalc.Text = "";
+            txtCalc.Text = string.Empty;
             _calculadora.Borrar();
         }
 
@@ -120,6 +121,61 @@ namespace UTR_E3.Eventos_y_sus_parámetros__lógica_de_negocio
             _calculadora.Visor = float.Parse(txtCalc.Text);
             _calculadora.Calcular();
             txtCalc.Text = _calculadora.Visor.ToString();
+        }
+
+        //TECLADO
+
+        private void Form1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //TECLADO DE NUMEROS
+
+            if (Char.IsDigit(e.KeyChar))
+            {
+                txtCalc.Text = txtCalc.Text + e.KeyChar.ToString();
+                return;
+            }
+
+            //COMA
+
+            if (e.KeyChar == ',')
+            {
+                if (txtCalc.Text.Contains(','))
+                {
+                    return;
+                }
+                txtCalc.Text += ",";
+            }
+
+            //TECLADO DE SIMBOLOS
+
+            switch (e.KeyChar)
+            {
+                case '+':
+                    num = float.Parse(txtCalc.Text);
+                    _calculadora.Visor = num;
+                    _calculadora.Operacion = OperacionEnum.Suma;
+                    txtCalc.Text = string.Empty;
+                    break;
+                case '-':
+                    num = float.Parse(txtCalc.Text);
+                    _calculadora.Visor = num;
+                    _calculadora.Operacion = OperacionEnum.Resta;
+                    txtCalc.Text = string.Empty;
+                    break;
+                case '*':
+                    num = float.Parse(txtCalc.Text);
+                    _calculadora.Visor = num;
+                    _calculadora.Operacion = OperacionEnum.Multiplicacion;
+                    txtCalc.Text = string.Empty;
+                    break;
+                case '/':
+                    num = float.Parse(txtCalc.Text);
+                    _calculadora.Visor = num;
+                    _calculadora.Operacion = OperacionEnum.Division;
+                    txtCalc.Text = string.Empty;
+                    break;
+            }
+
         }
 
     }
