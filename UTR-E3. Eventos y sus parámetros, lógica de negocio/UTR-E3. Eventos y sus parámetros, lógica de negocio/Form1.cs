@@ -23,58 +23,49 @@ namespace UTR_E3.Eventos_y_sus_parámetros__lógica_de_negocio
 
         private float num;
 
-        private void btn0_Click(object sender, EventArgs e)
+        private void btnNum_Click(object sender, EventArgs e)
         {
-            txtCalc.Text = txtCalc.Text + 0 + "";
-        }
+            string numero = ((Button)sender).Tag.ToString();
+            switch (numero)
+            {
+                case "1":
+                    txtCalc.Text = txtCalc.Text + 1 + "";
+                    break;
+                case "2":
+                    txtCalc.Text = txtCalc.Text + 2 + "";
+                    break;
+                case "3":
+                    txtCalc.Text = txtCalc.Text + 3 + "";
+                    break;
+                case "4":
+                    txtCalc.Text = txtCalc.Text + 4 + "";
+                    break;
+                case "5":
+                    txtCalc.Text = txtCalc.Text + 5 + "";
+                    break;
+                case "6":
+                    txtCalc.Text = txtCalc.Text + 6 + "";
+                    break;
+                case "7":
+                    txtCalc.Text = txtCalc.Text + 7 + "";
+                    break;
+                case "8":
+                    txtCalc.Text = txtCalc.Text + 8 + "";
+                    break;
+                case "9":
+                    txtCalc.Text = txtCalc.Text + 9 + "";
+                    break;
+                case "0":
+                    txtCalc.Text = txtCalc.Text + 0 + "";
+                    break;
+                case ",":
+                    if (!txtCalc.Text.Contains(","))
+                    {
+                        txtCalc.Text = txtCalc.Text + ",";
+                    }
+                    break;
 
-        private void btn1_Click(object sender, EventArgs e)
-        {
-            txtCalc.Text = txtCalc.Text + 1 + "";
-        }
-
-        private void btn2_Click(object sender, EventArgs e)
-        {
-            txtCalc.Text = txtCalc.Text + 2 + "";
-        }
-
-        private void btn3_Click(object sender, EventArgs e)
-        {
-            txtCalc.Text = txtCalc.Text + 3 + "";
-        }
-
-        private void btn4_Click(object sender, EventArgs e)
-        {
-            txtCalc.Text = txtCalc.Text + 4 + "";
-        }
-
-        private void btn5_Click(object sender, EventArgs e)
-        {
-            txtCalc.Text = txtCalc.Text + 5 + "";
-        }
-
-        private void btn6_Click(object sender, EventArgs e)
-        {
-            txtCalc.Text = txtCalc.Text + 6 + "";
-        }
-
-        private void btn7_Click(object sender, EventArgs e)
-        {
-            txtCalc.Text = txtCalc.Text + 7 + "";
-        }
-
-        private void btn8_Click(object sender, EventArgs e)
-        {
-            txtCalc.Text = txtCalc.Text + 8 + "";
-        }
-
-        private void btn9_Click(object sender, EventArgs e)
-        {
-            txtCalc.Text = txtCalc.Text + 9 + "";
-        }
-        private void btnComa_Click(object sender, EventArgs e)
-        {
-            txtCalc.Text = txtCalc.Text + ",";
+            }
         }
 
         //OPERADORES
@@ -88,25 +79,21 @@ namespace UTR_E3.Eventos_y_sus_parámetros__lógica_de_negocio
             {
                 case "+":
                     _calculadora.Operacion = OperacionEnum.Suma;
-                    txtCalc.Text = "";
                     break;
 
                 case "-":
                     _calculadora.Operacion = OperacionEnum.Resta;
-                    txtCalc.Text = "";
                     break;
 
                 case "*":
                     _calculadora.Operacion = OperacionEnum.Multiplicacion;
-                    txtCalc.Text = "";
                     break;
 
                 case "/":
                     _calculadora.Operacion = OperacionEnum.Division;
-                    txtCalc.Text = "";
                     break;
             }
-            txtCalc.Text = _calculadora.Visor.ToString();
+            txtCalc.Text = "";
         }
 
         //MISC
@@ -137,3 +124,4 @@ namespace UTR_E3.Eventos_y_sus_parámetros__lógica_de_negocio
 
     }
 }
+
