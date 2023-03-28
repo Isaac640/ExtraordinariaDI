@@ -1,0 +1,12 @@
+C:\Codigo\UTR-E1. Formularios y controles\UTR-E1. Formularios y controles\bin\Debug\UTR_E1.Formularios_y_controles.exe.config
+C:\Codigo\UTR-E1. Formularios y controles\UTR-E1. Formularios y controles\bin\Debug\UTR_E1.Formularios_y_controles.exe
+C:\Codigo\UTR-E1. Formularios y controles\UTR-E1. Formularios y controles\bin\Debug\UTR_E1.Formularios_y_controles.pdb
+C:\Codigo\UTR-E1. Formularios y controles\UTR-E1. Formularios y controles\obj\Debug\UTR-E1. Formularios y controles.csproj.AssemblyReference.cache
+C:\Codigo\UTR-E1. Formularios y controles\UTR-E1. Formularios y controles\obj\Debug\UTR-E1. Formularios y controles.csproj.SuggestedBindingRedirects.cache
+C:\Codigo\UTR-E1. Formularios y controles\UTR-E1. Formularios y controles\obj\Debug\UTR_E1.Formularios_y_controles.Form1.resources
+C:\Codigo\UTR-E1. Formularios y controles\UTR-E1. Formularios y controles\obj\Debug\UTR_E1.Formularios_y_controles.Properties.Resources.resources
+C:\Codigo\UTR-E1. Formularios y controles\UTR-E1. Formularios y controles\obj\Debug\UTR_E1.Formularios_y_controles.Resumen.resources
+C:\Codigo\UTR-E1. Formularios y controles\UTR-E1. Formularios y controles\obj\Debug\UTR-E1. Formularios y controles.csproj.GenerateResource.cache
+C:\Codigo\UTR-E1. Formularios y controles\UTR-E1. Formularios y controles\obj\Debug\UTR-E1. Formularios y controles.csproj.CoreCompileInputs.cache
+C:\Codigo\UTR-E1. Formularios y controles\UTR-E1. Formularios y controles\obj\Debug\UTR_E1.Formularios_y_controles.exe
+C:\Codigo\UTR-E1. Formularios y controles\UTR-E1. Formularios y controles\obj\Debug\UTR_E1.Formularios_y_controles.pdb
