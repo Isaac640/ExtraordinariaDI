@@ -32,33 +32,43 @@ namespace UTR_E3.Eventos_y_sus_parámetros__lógica_de_negocio
                 case "1":
                     txtCalc.Text += 1;
                     break;
+
                 case "2":
                     txtCalc.Text += 2;
                     break;
+
                 case "3":
                     txtCalc.Text += 3;
                     break;
+
                 case "4":
                     txtCalc.Text += 4;
                     break;
+
                 case "5":
                     txtCalc.Text += 5;
                     break;
+
                 case "6":
                     txtCalc.Text += 6;
                     break;
+
                 case "7":
                     txtCalc.Text += 7;
                     break;
+
                 case "8":
                     txtCalc.Text += 8;
                     break;
+
                 case "9":
                     txtCalc.Text += 9;
                     break;
+
                 case "0":
                     txtCalc.Text += 0;
                     break;
+
                 case ",":
                     if (!txtCalc.Text.Contains(","))
                     {
