@@ -73,7 +73,7 @@ namespace UTR_E3.Eventos_y_sus_parámetros__lógica_de_negocio
 
         private void btnOp_Click(object sender, EventArgs e)
         {
-            float.TryParse(txtCalc.Text, out num);
+            num = float.Parse(txtCalc.Text);
             _calculadora.Visor = num;
             string operacion = ((Button)sender).Tag.ToString();
             switch (operacion)
@@ -146,7 +146,7 @@ namespace UTR_E3.Eventos_y_sus_parámetros__lógica_de_negocio
                 txtCalc.Text += ",";
             }
 
-            //TECLADO DE SIMBOLOS
+            //TECLADO DE OPERADORES
 
             switch (e.KeyChar)
             {
@@ -156,18 +156,21 @@ namespace UTR_E3.Eventos_y_sus_parámetros__lógica_de_negocio
                     _calculadora.Operacion = OperacionEnum.Suma;
                     txtCalc.Text = string.Empty;
                     break;
+
                 case '-':
                     num = float.Parse(txtCalc.Text);
                     _calculadora.Visor = num;
                     _calculadora.Operacion = OperacionEnum.Resta;
                     txtCalc.Text = string.Empty;
                     break;
+
                 case '*':
                     num = float.Parse(txtCalc.Text);
                     _calculadora.Visor = num;
                     _calculadora.Operacion = OperacionEnum.Multiplicacion;
                     txtCalc.Text = string.Empty;
                     break;
+
                 case '/':
                     num = float.Parse(txtCalc.Text);
                     _calculadora.Visor = num;
