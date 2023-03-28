@@ -101,7 +101,7 @@ namespace UTR_E3.Eventos_y_sus_parámetros__lógica_de_negocio
 
         private void btnMS_Click(object sender, EventArgs e)
         {
-            float.TryParse(txtCalc.Text, out num);
+            num = float.Parse(txtCalc.Text);
             _calculadora.Memoria = num;
         }
 
@@ -131,7 +131,7 @@ namespace UTR_E3.Eventos_y_sus_parámetros__lógica_de_negocio
 
             if (Char.IsDigit(e.KeyChar))
             {
-                txtCalc.Text = txtCalc.Text + e.KeyChar.ToString();
+                txtCalc.Text += e.KeyChar.ToString();
                 return;
             }
 
