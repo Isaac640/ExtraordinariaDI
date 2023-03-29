@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33403.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UTR-E3. Aplicación de gestión", "UTR-E3. Aplicación de gestión\UTR-E3. Aplicación de gestión.csproj", "{7CA81005-A8AF-4B83-A25A-26173E4C22EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7CA81005-A8AF-4B83-A25A-26173E4C22EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CA81005-A8AF-4B83-A25A-26173E4C22EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CA81005-A8AF-4B83-A25A-26173E4C22EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CA81005-A8AF-4B83-A25A-26173E4C22EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E30D5F86-57E4-4E92-A580-C418632A23E5}
+	EndGlobalSection
+EndGlobal

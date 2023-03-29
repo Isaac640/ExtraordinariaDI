@@ -1,0 +1,21 @@
+C:\Users\Alumno\source\repos\UTR-E3. Aplicación de gestión\UTR-E3. Aplicación de gestión\bin\Debug\UTR_E3.Aplicación_de_gestión.exe.config
+C:\Users\Alumno\source\repos\UTR-E3. Aplicación de gestión\UTR-E3. Aplicación de gestión\bin\Debug\UTR_E3.Aplicación_de_gestión.exe
+C:\Users\Alumno\source\repos\UTR-E3. Aplicación de gestión\UTR-E3. Aplicación de gestión\bin\Debug\UTR_E3.Aplicación_de_gestión.pdb
+C:\Users\Alumno\source\repos\UTR-E3. Aplicación de gestión\UTR-E3. Aplicación de gestión\bin\Debug\EntityFramework.dll
+C:\Users\Alumno\source\repos\UTR-E3. Aplicación de gestión\UTR-E3. Aplicación de gestión\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Alumno\source\repos\UTR-E3. Aplicación de gestión\UTR-E3. Aplicación de gestión\bin\Debug\EntityFramework.xml
+C:\Users\Alumno\source\repos\UTR-E3. Aplicación de gestión\UTR-E3. Aplicación de gestión\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Alumno\source\repos\UTR-E3. Aplicación de gestión\UTR-E3. Aplicación de gestión\obj\Debug\UTR-E3. Aplicación de gestión.csproj.AssemblyReference.cache
+C:\Users\Alumno\source\repos\UTR-E3. Aplicación de gestión\UTR-E3. Aplicación de gestión\obj\Debug\UTR-E3. Aplicación de gestión.csproj.SuggestedBindingRedirects.cache
+C:\Users\Alumno\source\repos\UTR-E3. Aplicación de gestión\UTR-E3. Aplicación de gestión\obj\Debug\UTR_E3.Aplicación_de_gestión.LibroFrm.resources
+C:\Users\Alumno\source\repos\UTR-E3. Aplicación de gestión\UTR-E3. Aplicación de gestión\obj\Debug\UTR_E3.Aplicación_de_gestión.ListaLibroForm.resources
+C:\Users\Alumno\source\repos\UTR-E3. Aplicación de gestión\UTR-E3. Aplicación de gestión\obj\Debug\UTR_E3.Aplicación_de_gestión.Properties.Resources.resources
+C:\Users\Alumno\source\repos\UTR-E3. Aplicación de gestión\UTR-E3. Aplicación de gestión\obj\Debug\UTR-E3. Aplicación de gestión.csproj.GenerateResource.cache
+C:\Users\Alumno\source\repos\UTR-E3. Aplicación de gestión\UTR-E3. Aplicación de gestión\obj\Debug\UTR-E3. Aplicación de gestión.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\source\repos\UTR-E3. Aplicación de gestión\UTR-E3. Aplicación de gestión\obj\Debug\UTR-E3. Aplicación de gestión.csproj.CopyComplete
+C:\Users\Alumno\source\repos\UTR-E3. Aplicación de gestión\UTR-E3. Aplicación de gestión\obj\Debug\UTR_E3.Aplicación_de_gestión.exe
+C:\Users\Alumno\source\repos\UTR-E3. Aplicación de gestión\UTR-E3. Aplicación de gestión\obj\Debug\UTR_E3.Aplicación_de_gestión.pdb
+C:\Users\Alumno\source\repos\UTR-E3. Aplicación de gestión\UTR-E3. Aplicación de gestión\obj\Debug\UTR_E3.Aplicación_de_gestión.CatalogoFrm.resources
+C:\Users\Alumno\source\repos\UTR-E3. Aplicación de gestión\UTR-E3. Aplicación de gestión\obj\Debug\UTR_E3.Aplicación_de_gestión.ListaLibroFrm.resources
+C:\Users\Alumno\source\repos\UTR-E3. Aplicación de gestión\UTR-E3. Aplicación de gestión\obj\Debug\UTR_E3.Aplicación_de_gestión.ListaPeliculaFrm.resources
+C:\Users\Alumno\source\repos\UTR-E3. Aplicación de gestión\UTR-E3. Aplicación de gestión\obj\Debug\UTR_E3.Aplicación_de_gestión.PeliculaFrm.resources
