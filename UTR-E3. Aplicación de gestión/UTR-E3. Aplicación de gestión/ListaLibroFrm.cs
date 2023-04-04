@@ -15,7 +15,6 @@ namespace UTR_E3.Aplicación_de_gestión
         public ListaLibroFrm()
         {
             InitializeComponent();
-            RefrescarLista();
         }
 
         private void RefrescarLista()

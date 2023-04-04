@@ -19,23 +19,3 @@ C:\Users\Alumno\source\repos\UTR-E3. Aplicación de gestión\UTR-E3. Aplicación
 C:\Users\Alumno\source\repos\UTR-E3. Aplicación de gestión\UTR-E3. Aplicación de gestión\obj\Debug\UTR_E3.Aplicación_de_gestión.ListaLibroFrm.resources
 C:\Users\Alumno\source\repos\UTR-E3. Aplicación de gestión\UTR-E3. Aplicación de gestión\obj\Debug\UTR_E3.Aplicación_de_gestión.ListaPeliculaFrm.resources
 C:\Users\Alumno\source\repos\UTR-E3. Aplicación de gestión\UTR-E3. Aplicación de gestión\obj\Debug\UTR_E3.Aplicación_de_gestión.PeliculaFrm.resources
-C:\Codigo\EXTRAORDINARIA\ExtraordinariaDI\UTR-E3. Aplicación de gestión\UTR-E3. Aplicación de gestión\bin\Debug\UTR_E3.Aplicación_de_gestión.exe.config
-C:\Codigo\EXTRAORDINARIA\ExtraordinariaDI\UTR-E3. Aplicación de gestión\UTR-E3. Aplicación de gestión\bin\Debug\UTR_E3.Aplicación_de_gestión.exe
-C:\Codigo\EXTRAORDINARIA\ExtraordinariaDI\UTR-E3. Aplicación de gestión\UTR-E3. Aplicación de gestión\bin\Debug\UTR_E3.Aplicación_de_gestión.pdb
-C:\Codigo\EXTRAORDINARIA\ExtraordinariaDI\UTR-E3. Aplicación de gestión\UTR-E3. Aplicación de gestión\bin\Debug\EntityFramework.dll
-C:\Codigo\EXTRAORDINARIA\ExtraordinariaDI\UTR-E3. Aplicación de gestión\UTR-E3. Aplicación de gestión\bin\Debug\EntityFramework.SqlServer.dll
-C:\Codigo\EXTRAORDINARIA\ExtraordinariaDI\UTR-E3. Aplicación de gestión\UTR-E3. Aplicación de gestión\bin\Debug\EntityFramework.xml
-C:\Codigo\EXTRAORDINARIA\ExtraordinariaDI\UTR-E3. Aplicación de gestión\UTR-E3. Aplicación de gestión\bin\Debug\EntityFramework.SqlServer.xml
-C:\Codigo\EXTRAORDINARIA\ExtraordinariaDI\UTR-E3. Aplicación de gestión\UTR-E3. Aplicación de gestión\obj\Debug\UTR-E3. Aplicación de gestión.csproj.AssemblyReference.cache
-C:\Codigo\EXTRAORDINARIA\ExtraordinariaDI\UTR-E3. Aplicación de gestión\UTR-E3. Aplicación de gestión\obj\Debug\UTR-E3. Aplicación de gestión.csproj.SuggestedBindingRedirects.cache
-C:\Codigo\EXTRAORDINARIA\ExtraordinariaDI\UTR-E3. Aplicación de gestión\UTR-E3. Aplicación de gestión\obj\Debug\UTR_E3.Aplicación_de_gestión.CatalogoFrm.resources
-C:\Codigo\EXTRAORDINARIA\ExtraordinariaDI\UTR-E3. Aplicación de gestión\UTR-E3. Aplicación de gestión\obj\Debug\UTR_E3.Aplicación_de_gestión.LibroFrm.resources
-C:\Codigo\EXTRAORDINARIA\ExtraordinariaDI\UTR-E3. Aplicación de gestión\UTR-E3. Aplicación de gestión\obj\Debug\UTR_E3.Aplicación_de_gestión.ListaLibroFrm.resources
-C:\Codigo\EXTRAORDINARIA\ExtraordinariaDI\UTR-E3. Aplicación de gestión\UTR-E3. Aplicación de gestión\obj\Debug\UTR_E3.Aplicación_de_gestión.ListaPeliculaFrm.resources
-C:\Codigo\EXTRAORDINARIA\ExtraordinariaDI\UTR-E3. Aplicación de gestión\UTR-E3. Aplicación de gestión\obj\Debug\UTR_E3.Aplicación_de_gestión.PeliculaFrm.resources
-C:\Codigo\EXTRAORDINARIA\ExtraordinariaDI\UTR-E3. Aplicación de gestión\UTR-E3. Aplicación de gestión\obj\Debug\UTR_E3.Aplicación_de_gestión.Properties.Resources.resources
-C:\Codigo\EXTRAORDINARIA\ExtraordinariaDI\UTR-E3. Aplicación de gestión\UTR-E3. Aplicación de gestión\obj\Debug\UTR-E3. Aplicación de gestión.csproj.GenerateResource.cache
-C:\Codigo\EXTRAORDINARIA\ExtraordinariaDI\UTR-E3. Aplicación de gestión\UTR-E3. Aplicación de gestión\obj\Debug\UTR-E3. Aplicación de gestión.csproj.CoreCompileInputs.cache
-C:\Codigo\EXTRAORDINARIA\ExtraordinariaDI\UTR-E3. Aplicación de gestión\UTR-E3. Aplicación de gestión\obj\Debug\UTR-E3. Aplicación de gestión.csproj.CopyComplete
-C:\Codigo\EXTRAORDINARIA\ExtraordinariaDI\UTR-E3. Aplicación de gestión\UTR-E3. Aplicación de gestión\obj\Debug\UTR_E3.Aplicación_de_gestión.exe
-C:\Codigo\EXTRAORDINARIA\ExtraordinariaDI\UTR-E3. Aplicación de gestión\UTR-E3. Aplicación de gestión\obj\Debug\UTR_E3.Aplicación_de_gestión.pdb
