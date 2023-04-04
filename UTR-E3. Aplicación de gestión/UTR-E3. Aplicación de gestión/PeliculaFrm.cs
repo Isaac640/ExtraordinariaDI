@@ -12,26 +12,28 @@ namespace UTR_E3.Aplicación_de_gestión
 {
     public partial class PeliculaFrm : Form
     {
-        Peliculas peli;
+        private Peliculas peli;
         private PeliculaFrm()
         {
             InitializeComponent();
             peli = new Peliculas();
         }
-        public PeliculaFrm(Peliculas pelicula)
+        public PeliculaFrm(Peliculas pelicula) : this()
         {
-            peli = pelicula;
-            pelicula.Titulo = this.txtTilulo.Text;
-            pelicula.Anno = int.Parse(this.txtAnio.Text);
-            pelicula.Genero = this.txtGenero.Text;
+            this.peli = pelicula;
             this.DialogResult = DialogResult.Cancel;
+
+            this.txtTilulo.Text = string.Empty;
+            this.txtAnio.Text = string.Empty;
+            this.txtGenero.Text = string.Empty;
+            
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            peli.Titulo = txtTilulo.Text;
-            peli.Anno = int.Parse(txtAnio.Text);
-            peli.Genero = txtGenero.Text;
+            this.peli.Titulo = this.txtTilulo.Text;
+            this.peli.Anno = int.Parse(this.txtAnio.Text);
+            this.peli.Genero = this.txtGenero.Text;
             this.DialogResult = DialogResult.OK;
         }
 

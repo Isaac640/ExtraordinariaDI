@@ -12,27 +12,29 @@ namespace UTR_E3.Aplicación_de_gestión
 {
     public partial class LibroFrm : Form
     {
-        Libros lib;
+        private Libros lib;
         private LibroFrm()
         {
             InitializeComponent();
             lib = new Libros();
         }
 
-        public LibroFrm(Libros libro)
+        public LibroFrm(Libros libro) : this()
         {
-            lib = libro;
-            libro.Titulo = this.txtTilulo.Text;
-            libro.Anno = int.Parse(this.txtAnio.Text);
-            libro.Autor = this.txtAutor.Text;
+            this.lib = libro;
             this.DialogResult = DialogResult.Cancel;
+
+            this.txtTilulo.Text = string.Empty;
+            this.txtAnio.Text = string.Empty;
+            this.txtAutor.Text = string.Empty;
+            
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            lib.Titulo = txtTilulo.Text;
-            lib.Anno = int.Parse(txtAnio.Text);
-            lib.Autor = txtAutor.Text;
+            this.lib.Titulo = txtTilulo.Text;
+            this.lib.Anno = int.Parse(txtAnio.Text);
+            this.lib.Autor = txtAutor.Text;
             this.DialogResult = DialogResult.OK;
         }
 

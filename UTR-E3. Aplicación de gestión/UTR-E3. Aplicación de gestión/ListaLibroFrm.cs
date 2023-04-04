@@ -39,19 +39,34 @@ namespace UTR_E3.Aplicación_de_gestión
         {
             Libros libro = new Libros();
             LibroFrm formLibro = new LibroFrm(libro);
-            formLibro.ShowDialog();
+            if (formLibro.ShowDialog() == DialogResult.OK)
+            {
+                Negocio.CrearLibro(libro);
+                RefrescarLista();
+            }
         }
 
         private void tsrVerLibro_Click(object sender, EventArgs e)
         {
+            foreach (ListViewItem item in lvLibros.SelectedItems)
+            {
+                int idLibro = (int)item.Tag;
+                Libros libroSeleccionado = Negocio.ObtenerLibro(idLibro);
+                LibroFrm infoLibro = new LibroFrm(libroSeleccionado);
 
+                if (infoLibro.ShowDialog() == DialogResult.OK)
+                {
+                    Negocio.ActualizarLibro(libroSeleccionado);
+                    RefrescarLista();
+                }
+            }
         }
 
         private void tsrBorrarLibro_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("¿Seguro que quiere borrar este libro de la lista?", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
-                Negocio.BorrarPelicula((int)this.lvLibros.SelectedItems[0].Tag);
+                Negocio.BorrarLibro((int)this.lvLibros.SelectedItems[0].Tag);
             }
             RefrescarLista();
         }

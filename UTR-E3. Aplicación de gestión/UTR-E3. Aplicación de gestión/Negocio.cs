@@ -49,6 +49,16 @@ namespace UTR_E3.Aplicación_de_gestión
             _peliculas.Remove(borrar);
         }
 
+        public static void ActualizarPelicula(Peliculas peliMod)
+        {
+            Peliculas pelicula = _peliculas.FirstOrDefault(x => x.PeliculaId == peliMod.PeliculaId);
+
+            if (pelicula != null)
+            {
+                pelicula.Equals(peliMod);
+            }
+        }
+
         //LIBROS
 
         public static List<Libros> ObtenerLibros()
@@ -78,6 +88,16 @@ namespace UTR_E3.Aplicación_de_gestión
         {
             var borrar = ObtenerLibro(libroId);
             _libros.Remove(borrar);
+        }
+
+        public static void ActualizarLibro(Libros libroMod)
+        {
+            Libros libro = _libros.FirstOrDefault(x => x.LibroId == libroMod.LibroId);
+
+            if (libro != null)
+            {
+                libro.Equals(libroMod);
+            }
         }
     }
 }

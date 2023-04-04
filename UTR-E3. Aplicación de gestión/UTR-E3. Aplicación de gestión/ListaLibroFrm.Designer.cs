@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ListaLibroFrm));
+            this.mnsLibros = new System.Windows.Forms.MenuStrip();
+            this.librosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsrCrearLibroMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.lvLibros = new System.Windows.Forms.ListView();
             this.ColumnaTitulo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.ColumnaAnio = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -37,12 +41,34 @@
             this.tsrCrearLibro = new System.Windows.Forms.ToolStripMenuItem();
             this.tsrVerLibro = new System.Windows.Forms.ToolStripMenuItem();
             this.tsrBorrarLibro = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnsLibros = new System.Windows.Forms.MenuStrip();
-            this.librosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsrCrearLibroMenu = new System.Windows.Forms.ToolStripMenuItem();
-            this.cmsLibros.SuspendLayout();
             this.mnsLibros.SuspendLayout();
+            this.cmsLibros.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // mnsLibros
+            // 
+            this.mnsLibros.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.librosToolStripMenuItem});
+            this.mnsLibros.Location = new System.Drawing.Point(0, 0);
+            this.mnsLibros.Name = "mnsLibros";
+            this.mnsLibros.Size = new System.Drawing.Size(635, 24);
+            this.mnsLibros.TabIndex = 1;
+            this.mnsLibros.Text = "menuStrip1";
+            // 
+            // librosToolStripMenuItem
+            // 
+            this.librosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsrCrearLibroMenu});
+            this.librosToolStripMenuItem.Name = "librosToolStripMenuItem";
+            this.librosToolStripMenuItem.Size = new System.Drawing.Size(51, 20);
+            this.librosToolStripMenuItem.Text = "Libros";
+            // 
+            // tsrCrearLibroMenu
+            // 
+            this.tsrCrearLibroMenu.Name = "tsrCrearLibroMenu";
+            this.tsrCrearLibroMenu.Size = new System.Drawing.Size(102, 22);
+            this.tsrCrearLibroMenu.Text = "Crear";
+            this.tsrCrearLibroMenu.Click += new System.EventHandler(this.tsrCrearLibro_Click);
             // 
             // lvLibros
             // 
@@ -54,7 +80,7 @@
             this.lvLibros.Location = new System.Drawing.Point(0, 27);
             this.lvLibros.MultiSelect = false;
             this.lvLibros.Name = "lvLibros";
-            this.lvLibros.Size = new System.Drawing.Size(635, 264);
+            this.lvLibros.Size = new System.Drawing.Size(635, 262);
             this.lvLibros.TabIndex = 0;
             this.lvLibros.UseCompatibleStateImageBehavior = false;
             this.lvLibros.View = System.Windows.Forms.View.Details;
@@ -84,11 +110,12 @@
             this.tsrVerLibro,
             this.tsrBorrarLibro});
             this.cmsLibros.Name = "contextMenuStrip1";
-            this.cmsLibros.Size = new System.Drawing.Size(181, 92);
+            this.cmsLibros.Size = new System.Drawing.Size(107, 70);
             this.cmsLibros.Opening += new System.ComponentModel.CancelEventHandler(this.cmsLibros_Opening);
             // 
             // tsrCrearLibro
             // 
+            this.tsrCrearLibro.Image = ((System.Drawing.Image)(resources.GetObject("tsrCrearLibro.Image")));
             this.tsrCrearLibro.Name = "tsrCrearLibro";
             this.tsrCrearLibro.Size = new System.Drawing.Size(106, 22);
             this.tsrCrearLibro.Text = "Crear";
@@ -97,6 +124,7 @@
             // tsrVerLibro
             // 
             this.tsrVerLibro.Enabled = false;
+            this.tsrVerLibro.Image = ((System.Drawing.Image)(resources.GetObject("tsrVerLibro.Image")));
             this.tsrVerLibro.Name = "tsrVerLibro";
             this.tsrVerLibro.Size = new System.Drawing.Size(106, 22);
             this.tsrVerLibro.Text = "Ver";
@@ -105,35 +133,11 @@
             // tsrBorrarLibro
             // 
             this.tsrBorrarLibro.Enabled = false;
+            this.tsrBorrarLibro.Image = ((System.Drawing.Image)(resources.GetObject("tsrBorrarLibro.Image")));
             this.tsrBorrarLibro.Name = "tsrBorrarLibro";
             this.tsrBorrarLibro.Size = new System.Drawing.Size(106, 22);
             this.tsrBorrarLibro.Text = "Borrar";
             this.tsrBorrarLibro.Click += new System.EventHandler(this.tsrBorrarLibro_Click);
-            // 
-            // mnsLibros
-            // 
-            this.mnsLibros.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.librosToolStripMenuItem});
-            this.mnsLibros.Location = new System.Drawing.Point(0, 0);
-            this.mnsLibros.Name = "mnsLibros";
-            this.mnsLibros.Size = new System.Drawing.Size(635, 24);
-            this.mnsLibros.TabIndex = 1;
-            this.mnsLibros.Text = "menuStrip1";
-            // 
-            // librosToolStripMenuItem
-            // 
-            this.librosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsrCrearLibroMenu});
-            this.librosToolStripMenuItem.Name = "librosToolStripMenuItem";
-            this.librosToolStripMenuItem.Size = new System.Drawing.Size(51, 20);
-            this.librosToolStripMenuItem.Text = "Libros";
-            // 
-            // tsrCrearLibroMenu
-            // 
-            this.tsrCrearLibroMenu.Name = "tsrCrearLibroMenu";
-            this.tsrCrearLibroMenu.Size = new System.Drawing.Size(102, 22);
-            this.tsrCrearLibroMenu.Text = "Crear";
-            this.tsrCrearLibroMenu.Click += new System.EventHandler(this.tsrCrearLibro_Click);
             // 
             // ListaLibroFrm
             // 
@@ -146,9 +150,9 @@
             this.MainMenuStrip = this.mnsLibros;
             this.Name = "ListaLibroFrm";
             this.Text = "Mantenimiento de libros";
-            this.cmsLibros.ResumeLayout(false);
             this.mnsLibros.ResumeLayout(false);
             this.mnsLibros.PerformLayout();
+            this.cmsLibros.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
