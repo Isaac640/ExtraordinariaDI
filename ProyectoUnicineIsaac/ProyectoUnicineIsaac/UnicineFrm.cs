@@ -23,6 +23,18 @@ namespace ProyectoUnicineIsaac
             listaPelicula.MdiParent = this;
             listaPelicula.Show();
         }
+        private void sesionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ListaSesionesFrm listaSesiones = new ListaSesionesFrm();
+            listaSesiones.MdiParent = this;
+            listaSesiones.Show();
+        }
+        private void proyeccionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ListaProyeccionesFrm listaProyecciones = new ListaProyeccionesFrm();
+            listaProyecciones.MdiParent = this;
+            listaProyecciones.Show();
+        }
 
         private void cascadaToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -37,6 +49,11 @@ namespace ProyectoUnicineIsaac
         private void verticalToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.LayoutMdi(MdiLayout.TileVertical);
+        }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

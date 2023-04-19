@@ -55,12 +55,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Herramientas.cs" />
+    <Compile Include="BuscarPeliculaFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarPeliculaFrm.Designer.cs">
+      <DependentUpon>BuscarPeliculaFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarSesionFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarSesionFrm.Designer.cs">
+      <DependentUpon>BuscarSesionFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente.cs" />
     <Compile Include="ListaPeliculasFrm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ListaPeliculasFrm.Designer.cs">
       <DependentUpon>ListaPeliculasFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListaProyeccionesFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaProyeccionesFrm.Designer.cs">
+      <DependentUpon>ListaProyeccionesFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListaSesionesFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaSesionesFrm.Designer.cs">
+      <DependentUpon>ListaSesionesFrm.cs</DependentUpon>
     </Compile>
     <Compile Include="Pelicula.cs">
       <DependentUpon>ModeloUniCine.tt</DependentUpon>
@@ -74,8 +98,20 @@
     <Compile Include="Proyeccion.cs">
       <DependentUpon>ModeloUniCine.tt</DependentUpon>
     </Compile>
+    <Compile Include="ProyeccionFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProyeccionFrm.Designer.cs">
+      <DependentUpon>ProyeccionFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Sesion.cs">
       <DependentUpon>ModeloUniCine.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SesionFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SesionFrm.Designer.cs">
+      <DependentUpon>SesionFrm.cs</DependentUpon>
     </Compile>
     <Compile Include="UnicineFrm.cs">
       <SubType>Form</SubType>
@@ -100,11 +136,29 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BuscarPeliculaFrm.resx">
+      <DependentUpon>BuscarPeliculaFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarSesionFrm.resx">
+      <DependentUpon>BuscarSesionFrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ListaPeliculasFrm.resx">
       <DependentUpon>ListaPeliculasFrm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ListaProyeccionesFrm.resx">
+      <DependentUpon>ListaProyeccionesFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaSesionesFrm.resx">
+      <DependentUpon>ListaSesionesFrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PeliculaFrm.resx">
       <DependentUpon>PeliculaFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProyeccionFrm.resx">
+      <DependentUpon>ProyeccionFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SesionFrm.resx">
+      <DependentUpon>SesionFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UnicineFrm.resx">
       <DependentUpon>UnicineFrm.cs</DependentUpon>

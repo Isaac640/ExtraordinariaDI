@@ -6,30 +6,33 @@ using System.Threading.Tasks;
 
 namespace ProyectoUnicineIsaac
 {
-    public class Herramientas
+    public class Cliente
     {
 
         //PELICULAS
 
-        public static Pelicula[] ObtenerPeliculas()
+        public Pelicula[] ObtenerPeliculas()
         {
             UniCineBD bd = new UniCineBD();
             return bd.Peliculas.ToArray();
         }
 
-        public static Pelicula ObtenerPelicula(int PeliculaBD)
+        public Pelicula ObtenerPelicula(int PeliculaBD)
         {
             UniCineBD bd = new UniCineBD();
             return bd.Peliculas.FirstOrDefault(x => x.PeliculaId == PeliculaBD);
         }
 
-        public static void CrearPelicula(Pelicula PeliculaNueva)
+        public void CrearPelicula(Pelicula PeliculaNueva)
         {
             UniCineBD bd = new UniCineBD();
+            
             bd.Peliculas.Add(PeliculaNueva);
+
+            bd.SaveChanges();
         }
 
-        public static void ActualizarPelicula(Pelicula PeliculaMod)
+        public void ActualizarPelicula(Pelicula PeliculaMod)
         {
             UniCineBD bd = new UniCineBD();
             Pelicula peliculaBD = bd.Peliculas.FirstOrDefault(x => x.PeliculaId == PeliculaMod.PeliculaId);
@@ -41,7 +44,7 @@ namespace ProyectoUnicineIsaac
             }
         }
 
-        public static void EliminarPelicula(int peliculaId)
+        public void EliminarPelicula(int peliculaId)
         {
             UniCineBD bd = new UniCineBD();
             Pelicula faltaBD = bd.Peliculas.FirstOrDefault(x => x.PeliculaId == peliculaId);
@@ -52,27 +55,40 @@ namespace ProyectoUnicineIsaac
             }
         }
 
+        public int ObtenerIdPeliculaPorNombre(string nombrePelicula)
+        {
+            int idPeli = 0;
+            UniCineBD bd = new UniCineBD();
+            var peli = bd.Peliculas.FirstOrDefault(x => x.Nombre == nombrePelicula);
+            if (peli != null) { }
+            {
+                idPeli = peli.PeliculaId;
+            }
+            return idPeli;
+        }
+
         //SESIÓN
 
-        public static Sesion[] ObtenerSesiones()
+        public Sesion[] ObtenerSesiones()
         {
             UniCineBD bd = new UniCineBD();
             return bd.Sesiones.ToArray();
         }
 
-        public static Sesion ObtenerSesion(int Sesionid)
+        public Sesion ObtenerSesion(int Sesionid)
         {
             UniCineBD bd = new UniCineBD();
             return bd.Sesiones.FirstOrDefault(x => x.SesionId == Sesionid);
         }
 
-        public static void CrearSesion(Sesion SesionNueva)
+        public void CrearSesion(Sesion SesionNueva)
         {
             UniCineBD bd = new UniCineBD();
             bd.Sesiones.Add(SesionNueva);
+            bd.SaveChanges();
         }
 
-        public static void ActualizarSesion(Sesion sesionMod)
+        public void ActualizarSesion(Sesion sesionMod)
         {
             UniCineBD bd = new UniCineBD();
             Sesion sesion = bd.Sesiones.FirstOrDefault(x => x.SesionId == sesionMod.SesionId);
@@ -84,7 +100,7 @@ namespace ProyectoUnicineIsaac
             }
         }
 
-        public static void EliminarSesion(int sesionId)
+        public void EliminarSesion(int sesionId)
         {
             UniCineBD bd = new UniCineBD();
             Sesion faltaBD = bd.Sesiones.FirstOrDefault(x => x.SesionId == sesionId);
@@ -98,25 +114,26 @@ namespace ProyectoUnicineIsaac
         //PROYECCIONES 
         //falta de arreglar o decidir que id obtener
 
-        public static Proyeccion[] ObtenerProyecciones()
+        public Proyeccion[] ObtenerProyecciones()
         {
             UniCineBD bd = new UniCineBD();
             return bd.Proyecciones.ToArray();
         }
 
-        public static Proyeccion ObtenerProyeccion(int Sesionid)
+        public Proyeccion ObtenerProyeccion(int Sesionid)
         {
             UniCineBD bd = new UniCineBD();
             return bd.Proyecciones.FirstOrDefault(x => x.SesionId == Sesionid);
         }
 
-        public static void CrearProyeccion(Proyeccion SesionNueva)
+        public void CrearProyeccion(Proyeccion SesionNueva)
         {
             UniCineBD bd = new UniCineBD();
             bd.Proyecciones.Add(SesionNueva);
+            bd.SaveChanges();
         }
 
-        public static void ActualizarProyeccion(Proyeccion sesionMod)
+        public void ActualizarProyeccion(Proyeccion sesionMod)
         {
             UniCineBD bd = new UniCineBD();
             Proyeccion sesion = bd.Proyecciones.FirstOrDefault(x => x.SesionId == sesionMod.SesionId);
@@ -128,7 +145,7 @@ namespace ProyectoUnicineIsaac
             }
         }
 
-        public static void EliminarProyeccion(int sesionId)
+        public void EliminarProyeccion(int sesionId)
         {
             UniCineBD bd = new UniCineBD();
             Proyeccion faltaBD = bd.Proyecciones.FirstOrDefault(x => x.SesionId == sesionId);

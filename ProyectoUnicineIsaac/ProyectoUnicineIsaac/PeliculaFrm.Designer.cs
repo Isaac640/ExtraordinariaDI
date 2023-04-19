@@ -102,9 +102,9 @@
             this.cmbCategoria.FormattingEnabled = true;
             this.cmbCategoria.Items.AddRange(new object[] {
             "Todos",
-            "12",
-            "16",
-            "18"});
+            ">12",
+            ">16",
+            ">18"});
             this.cmbCategoria.Location = new System.Drawing.Point(364, 18);
             this.cmbCategoria.Name = "cmbCategoria";
             this.cmbCategoria.Size = new System.Drawing.Size(142, 21);
@@ -176,6 +176,7 @@
             // 
             // btnCancelar
             // 
+            this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancelar.Location = new System.Drawing.Point(350, 258);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 23);
@@ -207,7 +208,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "PeliculaFrm";
-            this.Text = "PeliculaFrm";
+            this.Text = "Crear Pelicula";
             this.ResumeLayout(false);
             this.PerformLayout();
 

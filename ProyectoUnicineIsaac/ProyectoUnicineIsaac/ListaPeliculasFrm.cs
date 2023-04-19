@@ -12,18 +12,20 @@ namespace ProyectoUnicineIsaac
 {
     public partial class ListaPeliculasFrm : Form
     {
+        private Cliente _cliente;
         public ListaPeliculasFrm()
         {
             InitializeComponent();
+            _cliente = new Cliente();
             RefrescarLista();
         }
 
         private void RefrescarLista()
         {
             this.lvPeliculas.Items.Clear();
-            Herramientas.ObtenerPeliculas().ToList();
+            _cliente.ObtenerPeliculas().ToList();
 
-            foreach (Pelicula peli in Herramientas.ObtenerPeliculas())
+            foreach (Pelicula peli in _cliente.ObtenerPeliculas())
             {
                 ListViewItem item = new ListViewItem(
                     new string[] {
@@ -45,8 +47,42 @@ namespace ProyectoUnicineIsaac
             PeliculaFrm peliculaFrm = new PeliculaFrm(peli);
             if (peliculaFrm.ShowDialog() == DialogResult.OK)
             {
-                Herramientas.CrearPelicula(peli);
+                _cliente.CrearPelicula(peli);
                 RefrescarLista();
+            }
+        }
+
+        private void tsrVerPelicula_Click(object sender, EventArgs e)
+        {
+            foreach (ListViewItem item in lvPeliculas.SelectedItems)
+            {
+                int idPeli = (int)item.Tag;
+                Pelicula peliculaSeleccionada = _cliente.ObtenerPelicula(idPeli);
+                PeliculaFrm infoPelicula = new PeliculaFrm(peliculaSeleccionada);
+
+                if (infoPelicula.ShowDialog() == DialogResult.OK)
+                {
+                    _cliente.ActualizarPelicula(peliculaSeleccionada);
+                    RefrescarLista();
+                }
+            }
+        }
+
+        private void tsrEliminarPelicula_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("¿Seguro que quiere borrar esta pelicula de la lista?", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            {
+                _cliente.EliminarPelicula((int)this.lvPeliculas.SelectedItems[0].Tag);
+            }
+            RefrescarLista();
+        }
+
+        private void cmsPeliculas_Opening(object sender, CancelEventArgs e)
+        {
+            if (lvPeliculas.SelectedItems.Count == 1)
+            {
+                tsrEliminarPelicula.Enabled = true;
+                tsrVerPelicula.Enabled = true;
             }
         }
     }
