@@ -13,29 +13,28 @@ namespace ProyectoUnicineIsaac
     public partial class BuscarSesionFrm : Form
     {
         private Cliente _cliente;
-        private int _id;
+        private Sesion _sesion;
         public BuscarSesionFrm()
         {
             InitializeComponent();
-            _id = new int();
             _cliente = new Cliente();
             RefrescarLista();
         }
 
-        public BuscarSesionFrm(int id) : this()
+        public Sesion sesionSeleccionada
         {
-            this._id = id;
+            get { return _sesion; }
+            set { sesionSeleccionada = _sesion; }
         }
 
         private void RefrescarLista()
         {
             this.lvSesiones.Items.Clear();
-            _cliente.ObtenerSesiones().ToList();
 
-            foreach (Sesion sesion in _cliente.ObtenerSesiones())
+            _cliente.ObtenerSesiones().ToList().ForEach(sesion =>
             {
                 ListViewItem item = new ListViewItem(
-                    new string[] {
+                   new string[] {
                     sesion.SesionId.ToString(),
                     sesion.Sala.ToString(),
                     sesion.DiaSemana.ToString(),
@@ -45,7 +44,7 @@ namespace ProyectoUnicineIsaac
                         );
                 item.Tag = sesion.SesionId;
                 this.lvSesiones.Items.Add(item);
-            }
+            });
         }
 
         private void agregarToolStripMenuItem_Click(object sender, EventArgs e)
@@ -53,7 +52,9 @@ namespace ProyectoUnicineIsaac
             if (lvSesiones.SelectedItems.Count > 0)
             {
                 ListViewItem sesionSeleccionada = lvSesiones.SelectedItems[0];
-                this._id = int.Parse(sesionSeleccionada.SubItems[0].Text);
+
+                int id = (int)sesionSeleccionada.Tag;
+                this._sesion = _cliente.ObtenerSesion(id);
                 this.DialogResult = DialogResult.OK;
             }
         }

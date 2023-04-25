@@ -23,21 +23,19 @@ namespace ProyectoUnicineIsaac
         private void RefrescarLista()
         {
             this.lvProyecciones.Items.Clear();
-            _cliente.ObtenerPeliculas().ToList();
-
-            foreach (Proyeccion proyeccion in _cliente.ObtenerProyecciones())
+            _cliente.ObtenerProyecciones().ToList().ForEach(proyeccion =>
             {
                 ListViewItem item = new ListViewItem(
-                    new string[] {
+                   new string[] {
                         proyeccion.SesionId.ToString(),
                         proyeccion.PeliculaId.ToString(),
                         proyeccion.Inicio.ToString(),
                         proyeccion.Fin.ToString()
                     }
                         );
-                item.Tag = proyeccion.Inicio;
+                item.Tag = proyeccion.PeliculaId;
                 this.lvProyecciones.Items.Add(item);
-            }
+            });
         }
 
         private void tsmCrearProyeccion_Click(object sender, EventArgs e)
@@ -55,13 +53,16 @@ namespace ProyectoUnicineIsaac
         {
             foreach (ListViewItem item in lvProyecciones.SelectedItems)
             {
-                int idProyeccion = (int)item.Tag;
-                Proyeccion proyeccionSeleccionada = _cliente.ObtenerProyeccion(idProyeccion);
-                ProyeccionFrm infoProyeccion = new ProyeccionFrm(proyeccionSeleccionada);
+                ListViewItem proyeccionSeleccionada = lvProyecciones.SelectedItems[0];
+                int sesion = int.Parse(proyeccionSeleccionada.SubItems[0].Text);
+                int pelicula = int.Parse(proyeccionSeleccionada.SubItems[1].Text); ;
+                DateTime fechaIni = DateTime.Parse(proyeccionSeleccionada.SubItems[2].Text);
+                Proyeccion proyeccion = _cliente.ObtenerProyeccion(sesion, pelicula, fechaIni);
+                ProyeccionFrm infoProyeccion = new ProyeccionFrm(proyeccion);
 
                 if (infoProyeccion.ShowDialog() == DialogResult.OK)
                 {
-                    _cliente.ActualizarProyeccion(proyeccionSeleccionada);
+                    _cliente.ActualizarProyeccion(proyeccion);
                     RefrescarLista();
                 }
             }
@@ -71,7 +72,13 @@ namespace ProyectoUnicineIsaac
         {
             if (MessageBox.Show("¿Seguro que quiere borrar esta proyeccion de la lista?", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
-                _cliente.EliminarProyeccion((int)this.lvProyecciones.SelectedItems[0].Tag);
+                ListViewItem proyeccionSeleccionada = lvProyecciones.SelectedItems[0];
+                int sesion = int.Parse(proyeccionSeleccionada.SubItems[0].Text);
+                int pelicula = int.Parse(proyeccionSeleccionada.SubItems[1].Text); ;
+                DateTime fechaIni = DateTime.Parse(proyeccionSeleccionada.SubItems[2].Text);
+
+                Proyeccion pro = _cliente.ObtenerProyeccion(sesion, pelicula, fechaIni);
+                _cliente.EliminarProyeccion(pro);
             }
             RefrescarLista();
         }

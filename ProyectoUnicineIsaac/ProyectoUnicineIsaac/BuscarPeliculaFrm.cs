@@ -13,49 +13,48 @@ namespace ProyectoUnicineIsaac
     public partial class BuscarPeliculaFrm : Form
     {
         private Cliente _cliente;
-        private int _id;
-        private string _nom;
-        private BuscarPeliculaFrm()
+        private Pelicula _pelicula;
+        public BuscarPeliculaFrm()
         {
             InitializeComponent();
             _cliente = new Cliente();
-            _id = 0;
-            _nom = "";
+            this.DialogResult = DialogResult.Cancel;
             RefrescarLista();
         }
 
-        public BuscarPeliculaFrm(int idPeli, string nombre) : this()
+        public Pelicula peliculaSeleccionada
         {
-            this._id = idPeli;
-            this._nom = nombre;
-            this.DialogResult = DialogResult.Cancel;
+            get { return _pelicula; } 
+            set { peliculaSeleccionada = _pelicula; }
         }
 
         private void RefrescarLista()
         {
             this.lvPeliculas.Items.Clear();
-            _cliente.ObtenerPeliculas().ToList();
-            //Hacer con where
-            foreach (Pelicula peli in _cliente.ObtenerPeliculas())
+            
+            _cliente.ObtenerPeliculas().ToList().ForEach(peli =>
             {
                 ListViewItem item = new ListViewItem(
-                    new string[] {
+                   new string[] {
                     peli.Nombre.ToString(),
                     peli.PeliculaId.ToString()
                     }
                         );
                 item.Tag = peli.PeliculaId;
                 this.lvPeliculas.Items.Add(item);
-            }
+            });
         }
 
         private void agregarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (lvPeliculas.SelectedItems.Count > 0)
             {
+                //localizar a partir del id de la lista la pelicula entera
                 ListViewItem peliSeleccionada = lvPeliculas.SelectedItems[0];
-                this._nom = peliSeleccionada.SubItems[0].Text;
-                this._id = _cliente.ObtenerIdPeliculaPorNombre(_nom);
+
+                int id = (int)peliSeleccionada.Tag;
+
+                this._pelicula = _cliente.ObtenerPelicula(id);
                 this.DialogResult = DialogResult.OK;
             }
         }

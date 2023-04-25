@@ -13,17 +13,14 @@ namespace ProyectoUnicineIsaac
     public partial class ProyeccionFrm : Form
     {
         Proyeccion pro;
-        int idPeli;
-        int idSesion;
-        string nombrePeli;
-        string nombreSesion;
+        Pelicula _pelicula;
+        Sesion _sesion;
         public ProyeccionFrm()
         {
             InitializeComponent();
-            idPeli = 0;
-            idSesion = 0;
-            nombrePeli = "";
             pro = new Proyeccion();
+            _pelicula = new Pelicula();
+            _sesion = new Sesion();
         }
 
         public ProyeccionFrm(Proyeccion proyeccion) : this()
@@ -39,8 +36,8 @@ namespace ProyectoUnicineIsaac
 
         private void btnCrear_Click(object sender, EventArgs e)
         {
-            this.pro.SesionId = idSesion;
-            this.pro.PeliculaId = idPeli;
+            this.pro.SesionId = _sesion.SesionId;
+            this.pro.PeliculaId = _pelicula.PeliculaId;
             this.pro.Inicio = this.dtpInicio.Value;
             this.pro.Fin = this.dtpFin.Value;
             this.DialogResult = DialogResult.OK;
@@ -53,19 +50,21 @@ namespace ProyectoUnicineIsaac
 
         private void btnBuscarSesion_Click(object sender, EventArgs e)
         {
-            BuscarSesionFrm buscarSesionFrm = new BuscarSesionFrm(idSesion);
+            BuscarSesionFrm buscarSesionFrm = new BuscarSesionFrm();
             if (buscarSesionFrm.ShowDialog() == DialogResult.OK)
             {
-                txtSesion.Text = idSesion.ToString();
+                _sesion = buscarSesionFrm.sesionSeleccionada;
+                txtSesion.Text = _sesion.Sala;
             }
         }
 
         private void btnBuscarPelicula_Click(object sender, EventArgs e)
         {
-            BuscarPeliculaFrm buscarPeliFrm = new BuscarPeliculaFrm(idPeli, nombrePeli);
+            BuscarPeliculaFrm buscarPeliFrm = new BuscarPeliculaFrm();
             if (buscarPeliFrm.ShowDialog() == DialogResult.OK)
             {
-                txtPelicula.Text = nombrePeli;
+                _pelicula = buscarPeliFrm.peliculaSeleccionada;
+                txtPelicula.Text = _pelicula.Nombre;
             }
 
         }

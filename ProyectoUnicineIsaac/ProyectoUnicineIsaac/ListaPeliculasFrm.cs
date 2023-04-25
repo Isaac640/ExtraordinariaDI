@@ -23,9 +23,8 @@ namespace ProyectoUnicineIsaac
         private void RefrescarLista()
         {
             this.lvPeliculas.Items.Clear();
-            _cliente.ObtenerPeliculas().ToList();
-
-            foreach (Pelicula peli in _cliente.ObtenerPeliculas())
+            
+            _cliente.ObtenerPeliculas().ToList().ForEach(peli =>
             {
                 ListViewItem item = new ListViewItem(
                     new string[] {
@@ -38,7 +37,7 @@ namespace ProyectoUnicineIsaac
                         );
                 item.Tag = peli.PeliculaId;
                 this.lvPeliculas.Items.Add(item);
-            }
+            });
         }
 
         private void tsrCrearPelicula_Click(object sender, EventArgs e)

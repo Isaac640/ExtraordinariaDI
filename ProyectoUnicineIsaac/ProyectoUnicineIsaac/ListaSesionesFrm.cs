@@ -23,12 +23,11 @@ namespace ProyectoUnicineIsaac
         private void RefrescarLista()
         {
             this.lvSesiones.Items.Clear();
-            _cliente.ObtenerPeliculas().ToList();
 
-            foreach (Sesion sesion in _cliente.ObtenerSesiones())
+            _cliente.ObtenerSesiones().ToList().ForEach(sesion =>
             {
                 ListViewItem item = new ListViewItem(
-                    new string[] {
+                   new string[] {
                         sesion.Sala.ToString(),
                         sesion.DiaSemana.ToString(),
                         sesion.Comienzo.ToString(),
@@ -39,7 +38,7 @@ namespace ProyectoUnicineIsaac
                         );
                 item.Tag = sesion.SesionId;
                 this.lvSesiones.Items.Add(item);
-            }
+            });
         }
 
         private void tsmCrearSesion_Click(object sender, EventArgs e)

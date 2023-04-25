@@ -26,7 +26,7 @@ namespace ProyectoUnicineIsaac
         public void CrearPelicula(Pelicula PeliculaNueva)
         {
             UniCineBD bd = new UniCineBD();
-            
+
             bd.Peliculas.Add(PeliculaNueva);
 
             bd.SaveChanges();
@@ -53,18 +53,6 @@ namespace ProyectoUnicineIsaac
                 bd.Peliculas.Remove(faltaBD);
                 bd.SaveChanges();
             }
-        }
-
-        public int ObtenerIdPeliculaPorNombre(string nombrePelicula)
-        {
-            int idPeli = 0;
-            UniCineBD bd = new UniCineBD();
-            var peli = bd.Peliculas.FirstOrDefault(x => x.Nombre == nombrePelicula);
-            if (peli != null) { }
-            {
-                idPeli = peli.PeliculaId;
-            }
-            return idPeli;
         }
 
         //SESIÓN
@@ -120,10 +108,11 @@ namespace ProyectoUnicineIsaac
             return bd.Proyecciones.ToArray();
         }
 
-        public Proyeccion ObtenerProyeccion(int Sesionid)
+        public Proyeccion ObtenerProyeccion(int sesionId, int peliculaId, DateTime fechaIni)
         {
             UniCineBD bd = new UniCineBD();
-            return bd.Proyecciones.FirstOrDefault(x => x.SesionId == Sesionid);
+            return bd.Proyecciones.FirstOrDefault(x => x.SesionId == sesionId &&
+            x.PeliculaId == peliculaId && x.Inicio == fechaIni);
         }
 
         public void CrearProyeccion(Proyeccion SesionNueva)
@@ -145,15 +134,17 @@ namespace ProyectoUnicineIsaac
             }
         }
 
-        public void EliminarProyeccion(int sesionId)
+        public void EliminarProyeccion(Proyeccion proEliminar)
         {
             UniCineBD bd = new UniCineBD();
-            Proyeccion faltaBD = bd.Proyecciones.FirstOrDefault(x => x.SesionId == sesionId);
-            if (faltaBD != null)
+            Proyeccion pro = bd.Proyecciones.FirstOrDefault(x => x.SesionId == proEliminar.SesionId && 
+            x.PeliculaId == proEliminar.PeliculaId && x.Inicio == proEliminar.Inicio);
+            if (pro != null)
             {
-                bd.Proyecciones.Remove(faltaBD);
+                bd.Proyecciones.Remove(pro);
                 bd.SaveChanges();
             }
+
         }
 
     }
