@@ -68,7 +68,7 @@
             // crearProyecciónToolStripMenuItem
             // 
             this.crearProyecciónToolStripMenuItem.Name = "crearProyecciónToolStripMenuItem";
-            this.crearProyecciónToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.crearProyecciónToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
             this.crearProyecciónToolStripMenuItem.Text = "Crear Proyección";
             this.crearProyecciónToolStripMenuItem.Click += new System.EventHandler(this.tsmCrearProyeccion_Click);
             // 
@@ -87,6 +87,7 @@
             this.Fin});
             this.lvProyecciones.ContextMenuStrip = this.cmsProyeccion;
             this.lvProyecciones.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lvProyecciones.FullRowSelect = true;
             this.lvProyecciones.HideSelection = false;
             this.lvProyecciones.Location = new System.Drawing.Point(0, 24);
             this.lvProyecciones.MultiSelect = false;
@@ -129,21 +130,21 @@
             // tsmCrearProyeccion
             // 
             this.tsmCrearProyeccion.Name = "tsmCrearProyeccion";
-            this.tsmCrearProyeccion.Size = new System.Drawing.Size(180, 22);
+            this.tsmCrearProyeccion.Size = new System.Drawing.Size(117, 22);
             this.tsmCrearProyeccion.Text = "Crear";
             this.tsmCrearProyeccion.Click += new System.EventHandler(this.tsmCrearProyeccion_Click);
             // 
             // tsmVerProyeccion
             // 
             this.tsmVerProyeccion.Name = "tsmVerProyeccion";
-            this.tsmVerProyeccion.Size = new System.Drawing.Size(180, 22);
+            this.tsmVerProyeccion.Size = new System.Drawing.Size(117, 22);
             this.tsmVerProyeccion.Text = "Ver";
             this.tsmVerProyeccion.Click += new System.EventHandler(this.tsmVerProyeccion_Click);
             // 
             // tsmEliminarProyeccion
             // 
             this.tsmEliminarProyeccion.Name = "tsmEliminarProyeccion";
-            this.tsmEliminarProyeccion.Size = new System.Drawing.Size(180, 22);
+            this.tsmEliminarProyeccion.Size = new System.Drawing.Size(117, 22);
             this.tsmEliminarProyeccion.Text = "Eliminar";
             this.tsmEliminarProyeccion.Click += new System.EventHandler(this.tsmEliminarProyeccion_Click);
             // 

@@ -40,6 +40,7 @@
             this.dtpFin = new System.Windows.Forms.DateTimePicker();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnCrear = new System.Windows.Forms.Button();
+            this.btnBorrar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -125,7 +126,7 @@
             // dtpFin
             // 
             this.dtpFin.CustomFormat = " ";
-            this.dtpFin.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpFin.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpFin.Location = new System.Drawing.Point(84, 118);
             this.dtpFin.Name = "dtpFin";
             this.dtpFin.Size = new System.Drawing.Size(102, 20);
@@ -134,7 +135,7 @@
             // btnCancelar
             // 
             this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancelar.Location = new System.Drawing.Point(148, 153);
+            this.btnCancelar.Location = new System.Drawing.Point(158, 167);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 23);
             this.btnCancelar.TabIndex = 10;
@@ -144,7 +145,7 @@
             // 
             // btnCrear
             // 
-            this.btnCrear.Location = new System.Drawing.Point(229, 153);
+            this.btnCrear.Location = new System.Drawing.Point(239, 167);
             this.btnCrear.Name = "btnCrear";
             this.btnCrear.Size = new System.Drawing.Size(75, 23);
             this.btnCrear.TabIndex = 11;
@@ -152,13 +153,24 @@
             this.btnCrear.UseVisualStyleBackColor = true;
             this.btnCrear.Click += new System.EventHandler(this.btnCrear_Click);
             // 
+            // btnBorrar
+            // 
+            this.btnBorrar.Location = new System.Drawing.Point(192, 118);
+            this.btnBorrar.Name = "btnBorrar";
+            this.btnBorrar.Size = new System.Drawing.Size(75, 23);
+            this.btnBorrar.TabIndex = 12;
+            this.btnBorrar.Text = "Borrar";
+            this.btnBorrar.UseVisualStyleBackColor = true;
+            this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click);
+            // 
             // ProyeccionFrm
             // 
             this.AcceptButton = this.btnCrear;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancelar;
-            this.ClientSize = new System.Drawing.Size(326, 187);
+            this.ClientSize = new System.Drawing.Size(326, 202);
+            this.Controls.Add(this.btnBorrar);
             this.Controls.Add(this.btnCrear);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.dtpFin);
@@ -192,5 +204,6 @@
         private System.Windows.Forms.DateTimePicker dtpFin;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnCrear;
+        private System.Windows.Forms.Button btnBorrar;
     }
 }

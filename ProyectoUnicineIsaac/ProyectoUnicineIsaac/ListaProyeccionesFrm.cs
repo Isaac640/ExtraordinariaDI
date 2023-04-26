@@ -33,7 +33,7 @@ namespace ProyectoUnicineIsaac
                         proyeccion.Fin.ToString()
                     }
                         );
-                item.Tag = proyeccion.PeliculaId;
+                item.Tag = proyeccion;
                 this.lvProyecciones.Items.Add(item);
             });
         }
@@ -53,11 +53,7 @@ namespace ProyectoUnicineIsaac
         {
             foreach (ListViewItem item in lvProyecciones.SelectedItems)
             {
-                ListViewItem proyeccionSeleccionada = lvProyecciones.SelectedItems[0];
-                int sesion = int.Parse(proyeccionSeleccionada.SubItems[0].Text);
-                int pelicula = int.Parse(proyeccionSeleccionada.SubItems[1].Text); ;
-                DateTime fechaIni = DateTime.Parse(proyeccionSeleccionada.SubItems[2].Text);
-                Proyeccion proyeccion = _cliente.ObtenerProyeccion(sesion, pelicula, fechaIni);
+                Proyeccion proyeccion = (Proyeccion)lvProyecciones.SelectedItems[0].Tag;
                 ProyeccionFrm infoProyeccion = new ProyeccionFrm(proyeccion);
 
                 if (infoProyeccion.ShowDialog() == DialogResult.OK)
@@ -70,14 +66,9 @@ namespace ProyectoUnicineIsaac
 
         private void tsmEliminarProyeccion_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("¿Seguro que quiere borrar esta proyeccion de la lista?", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            if (MessageBox.Show("¿Seguro que quiere borrar esta proyeccion de la lista?", "Aviso", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
             {
-                ListViewItem proyeccionSeleccionada = lvProyecciones.SelectedItems[0];
-                int sesion = int.Parse(proyeccionSeleccionada.SubItems[0].Text);
-                int pelicula = int.Parse(proyeccionSeleccionada.SubItems[1].Text); ;
-                DateTime fechaIni = DateTime.Parse(proyeccionSeleccionada.SubItems[2].Text);
-
-                Proyeccion pro = _cliente.ObtenerProyeccion(sesion, pelicula, fechaIni);
+                Proyeccion pro = (Proyeccion)lvProyecciones.SelectedItems[0].Tag;
                 _cliente.EliminarProyeccion(pro);
             }
             RefrescarLista();

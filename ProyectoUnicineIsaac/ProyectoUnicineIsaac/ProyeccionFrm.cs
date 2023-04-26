@@ -38,8 +38,8 @@ namespace ProyectoUnicineIsaac
         {
             this.pro.SesionId = _sesion.SesionId;
             this.pro.PeliculaId = _pelicula.PeliculaId;
-            this.pro.Inicio = this.dtpInicio.Value;
-            this.pro.Fin = this.dtpFin.Value;
+            this.pro.Inicio = this.dtpInicio.Value.Date;
+            this.pro.Fin = this.dtpFin.Value.Date;
             this.DialogResult = DialogResult.OK;
         }
 
@@ -67,6 +67,11 @@ namespace ProyectoUnicineIsaac
                 txtPelicula.Text = _pelicula.Nombre;
             }
 
+        }
+
+        private void btnBorrar_Click(object sender, EventArgs e)
+        {
+            dtpFin.CustomFormat = " ";
         }
     }
 }
