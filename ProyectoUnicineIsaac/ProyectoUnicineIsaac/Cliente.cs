@@ -8,11 +8,15 @@ namespace ProyectoUnicineIsaac
 {
     public class Cliente
     {
-        private UniCineBD bd;
+        private UniCineBD bd = new UniCineBD();
 
         public Cliente()
         {
-            bd = new UniCineBD();
+        }
+
+        public Cliente(UniCineBD bd)
+        {
+
         }
 
 
