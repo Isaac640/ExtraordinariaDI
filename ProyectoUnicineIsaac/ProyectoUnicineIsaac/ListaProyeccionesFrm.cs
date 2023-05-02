@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoUnicineIsaac.Reports;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,6 +14,7 @@ namespace ProyectoUnicineIsaac
     public partial class ListaProyeccionesFrm : Form
     {
         private Cliente _cliente;
+        private Generador _generador = new Generador();
         public ListaProyeccionesFrm()
         {
             InitializeComponent();
@@ -81,6 +83,11 @@ namespace ProyectoUnicineIsaac
                 tsmEliminarProyeccion.Enabled = true;
                 tsmVerProyeccion.Enabled = true;
             }
+        }
+
+        private void tsmCartelera_Click(object sender, EventArgs e)
+        {
+            _generador.CargarCarteleraProyecciones();
         }
     }
 }

@@ -32,7 +32,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.proyeccionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.crearProyecciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.informeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmCartelera = new System.Windows.Forms.ToolStripMenuItem();
             this.lvProyecciones = new System.Windows.Forms.ListView();
             this.Sesión = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Pelicula = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -50,7 +50,7 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.proyeccionesToolStripMenuItem,
-            this.informeToolStripMenuItem});
+            this.tsmCartelera});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(432, 24);
@@ -72,11 +72,12 @@
             this.crearProyecciónToolStripMenuItem.Text = "Crear Proyección";
             this.crearProyecciónToolStripMenuItem.Click += new System.EventHandler(this.tsmCrearProyeccion_Click);
             // 
-            // informeToolStripMenuItem
+            // tsmCartelera
             // 
-            this.informeToolStripMenuItem.Name = "informeToolStripMenuItem";
-            this.informeToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
-            this.informeToolStripMenuItem.Text = "Informe";
+            this.tsmCartelera.Name = "tsmCartelera";
+            this.tsmCartelera.Size = new System.Drawing.Size(66, 20);
+            this.tsmCartelera.Text = "Cartelera";
+            this.tsmCartelera.Click += new System.EventHandler(this.tsmCartelera_Click);
             // 
             // lvProyecciones
             // 
@@ -170,7 +171,7 @@
 
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem proyeccionesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem informeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tsmCartelera;
         private System.Windows.Forms.ToolStripMenuItem crearProyecciónToolStripMenuItem;
         private System.Windows.Forms.ListView lvProyecciones;
         private System.Windows.Forms.ColumnHeader Sesión;

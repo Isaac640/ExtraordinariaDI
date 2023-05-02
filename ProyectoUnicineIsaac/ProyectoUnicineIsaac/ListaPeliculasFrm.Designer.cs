@@ -32,7 +32,7 @@
             this.mnsPeliculas = new System.Windows.Forms.MenuStrip();
             this.peliculasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.crearPeliculaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.informeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmGeneros = new System.Windows.Forms.ToolStripMenuItem();
             this.lvPeliculas = new System.Windows.Forms.ListView();
             this.Nombre = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Categoria = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -43,6 +43,8 @@
             this.tsrCrearPelicula = new System.Windows.Forms.ToolStripMenuItem();
             this.tsrVerPelicula = new System.Windows.Forms.ToolStripMenuItem();
             this.tsrEliminarPelicula = new System.Windows.Forms.ToolStripMenuItem();
+            this.informeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fichaDePeliculaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnsPeliculas.SuspendLayout();
             this.cmsPeliculas.SuspendLayout();
             this.SuspendLayout();
@@ -51,7 +53,7 @@
             // 
             this.mnsPeliculas.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.peliculasToolStripMenuItem,
-            this.informeToolStripMenuItem});
+            this.tsmGeneros});
             this.mnsPeliculas.Location = new System.Drawing.Point(0, 0);
             this.mnsPeliculas.Name = "mnsPeliculas";
             this.mnsPeliculas.Size = new System.Drawing.Size(621, 24);
@@ -69,15 +71,16 @@
             // crearPeliculaToolStripMenuItem
             // 
             this.crearPeliculaToolStripMenuItem.Name = "crearPeliculaToolStripMenuItem";
-            this.crearPeliculaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.crearPeliculaToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.crearPeliculaToolStripMenuItem.Text = "Crear Pelicula";
             this.crearPeliculaToolStripMenuItem.Click += new System.EventHandler(this.tsrCrearPelicula_Click);
             // 
-            // informeToolStripMenuItem
+            // tsmGeneros
             // 
-            this.informeToolStripMenuItem.Name = "informeToolStripMenuItem";
-            this.informeToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
-            this.informeToolStripMenuItem.Text = "Informe";
+            this.tsmGeneros.Name = "tsmGeneros";
+            this.tsmGeneros.Size = new System.Drawing.Size(62, 20);
+            this.tsmGeneros.Text = "Géneros";
+            this.tsmGeneros.Click += new System.EventHandler(this.tsmCategorias_Click);
             // 
             // lvPeliculas
             // 
@@ -89,6 +92,7 @@
             this.Anno});
             this.lvPeliculas.ContextMenuStrip = this.cmsPeliculas;
             this.lvPeliculas.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lvPeliculas.FullRowSelect = true;
             this.lvPeliculas.HideSelection = false;
             this.lvPeliculas.Location = new System.Drawing.Point(0, 24);
             this.lvPeliculas.MultiSelect = false;
@@ -128,9 +132,10 @@
             this.cmsPeliculas.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsrCrearPelicula,
             this.tsrVerPelicula,
-            this.tsrEliminarPelicula});
+            this.tsrEliminarPelicula,
+            this.informeToolStripMenuItem});
             this.cmsPeliculas.Name = "contextMenuStrip1";
-            this.cmsPeliculas.Size = new System.Drawing.Size(118, 70);
+            this.cmsPeliculas.Size = new System.Drawing.Size(118, 92);
             this.cmsPeliculas.Opening += new System.ComponentModel.CancelEventHandler(this.cmsPeliculas_Opening);
             // 
             // tsrCrearPelicula
@@ -153,6 +158,21 @@
             this.tsrEliminarPelicula.Size = new System.Drawing.Size(117, 22);
             this.tsrEliminarPelicula.Text = "Eliminar";
             this.tsrEliminarPelicula.Click += new System.EventHandler(this.tsrEliminarPelicula_Click);
+            // 
+            // informeToolStripMenuItem
+            // 
+            this.informeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fichaDePeliculaToolStripMenuItem});
+            this.informeToolStripMenuItem.Name = "informeToolStripMenuItem";
+            this.informeToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.informeToolStripMenuItem.Text = "Informe";
+            // 
+            // fichaDePeliculaToolStripMenuItem
+            // 
+            this.fichaDePeliculaToolStripMenuItem.Name = "fichaDePeliculaToolStripMenuItem";
+            this.fichaDePeliculaToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.fichaDePeliculaToolStripMenuItem.Text = "Ficha de Pelicula";
+            this.fichaDePeliculaToolStripMenuItem.Click += new System.EventHandler(this.fichaDePeliculaToolStripMenuItem_Click);
             // 
             // ListaPeliculasFrm
             // 
@@ -177,7 +197,6 @@
         private System.Windows.Forms.MenuStrip mnsPeliculas;
         private System.Windows.Forms.ToolStripMenuItem peliculasToolStripMenuItem;
         private System.Windows.Forms.ListView lvPeliculas;
-        private System.Windows.Forms.ToolStripMenuItem informeToolStripMenuItem;
         private System.Windows.Forms.ColumnHeader Nombre;
         private System.Windows.Forms.ColumnHeader Categoria;
         private System.Windows.Forms.ColumnHeader Genero;
@@ -188,5 +207,8 @@
         private System.Windows.Forms.ToolStripMenuItem tsrCrearPelicula;
         private System.Windows.Forms.ToolStripMenuItem tsrVerPelicula;
         private System.Windows.Forms.ToolStripMenuItem tsrEliminarPelicula;
+        private System.Windows.Forms.ToolStripMenuItem informeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fichaDePeliculaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tsmGeneros;
     }
 }

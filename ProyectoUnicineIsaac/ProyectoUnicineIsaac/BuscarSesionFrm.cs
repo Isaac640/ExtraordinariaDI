@@ -35,7 +35,6 @@ namespace ProyectoUnicineIsaac
             {
                 ListViewItem item = new ListViewItem(
                    new string[] {
-                    sesion.SesionId.ToString(),
                     sesion.Sala.ToString(),
                     sesion.DiaSemana.ToString(),
                     sesion.Comienzo.ToString(),

@@ -114,7 +114,6 @@ namespace ProyectoUnicineIsaac
         }
 
         //PROYECCIONES 
-        //falta de arreglar o decidir que id obtener
 
         public Proyeccion[] ObtenerProyecciones()
         {

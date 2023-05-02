@@ -32,7 +32,7 @@
             this.mnsSesion = new System.Windows.Forms.MenuStrip();
             this.sesionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.crearSesionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.informeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmCuadricula = new System.Windows.Forms.ToolStripMenuItem();
             this.lvSesiones = new System.Windows.Forms.ListView();
             this.Salas = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Dia = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -52,7 +52,7 @@
             // 
             this.mnsSesion.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.sesionesToolStripMenuItem,
-            this.informeToolStripMenuItem});
+            this.tsmCuadricula});
             this.mnsSesion.Location = new System.Drawing.Point(0, 0);
             this.mnsSesion.Name = "mnsSesion";
             this.mnsSesion.Size = new System.Drawing.Size(483, 24);
@@ -70,15 +70,16 @@
             // crearSesionToolStripMenuItem
             // 
             this.crearSesionToolStripMenuItem.Name = "crearSesionToolStripMenuItem";
-            this.crearSesionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.crearSesionToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
             this.crearSesionToolStripMenuItem.Text = "Crear Sesion";
             this.crearSesionToolStripMenuItem.Click += new System.EventHandler(this.tsmCrearSesion_Click);
             // 
-            // informeToolStripMenuItem
+            // tsmCuadricula
             // 
-            this.informeToolStripMenuItem.Name = "informeToolStripMenuItem";
-            this.informeToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
-            this.informeToolStripMenuItem.Text = "Informe";
+            this.tsmCuadricula.Name = "tsmCuadricula";
+            this.tsmCuadricula.Size = new System.Drawing.Size(139, 20);
+            this.tsmCuadricula.Text = "Cuadricula de sesiones";
+            this.tsmCuadricula.Click += new System.EventHandler(this.informeToolStripMenuItem_Click);
             // 
             // lvSesiones
             // 
@@ -91,6 +92,7 @@
             this.Aforo});
             this.lvSesiones.ContextMenuStrip = this.cmsSesion;
             this.lvSesiones.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lvSesiones.FullRowSelect = true;
             this.lvSesiones.HideSelection = false;
             this.lvSesiones.Location = new System.Drawing.Point(0, 24);
             this.lvSesiones.MultiSelect = false;
@@ -143,21 +145,21 @@
             // tsmCrearSesion
             // 
             this.tsmCrearSesion.Name = "tsmCrearSesion";
-            this.tsmCrearSesion.Size = new System.Drawing.Size(180, 22);
+            this.tsmCrearSesion.Size = new System.Drawing.Size(117, 22);
             this.tsmCrearSesion.Text = "Crear";
             this.tsmCrearSesion.Click += new System.EventHandler(this.tsmCrearSesion_Click);
             // 
             // tsmVerSesion
             // 
             this.tsmVerSesion.Name = "tsmVerSesion";
-            this.tsmVerSesion.Size = new System.Drawing.Size(180, 22);
+            this.tsmVerSesion.Size = new System.Drawing.Size(117, 22);
             this.tsmVerSesion.Text = "Ver";
             this.tsmVerSesion.Click += new System.EventHandler(this.tsmVerSesion_Click);
             // 
             // tsmEliminarSesion
             // 
             this.tsmEliminarSesion.Name = "tsmEliminarSesion";
-            this.tsmEliminarSesion.Size = new System.Drawing.Size(180, 22);
+            this.tsmEliminarSesion.Size = new System.Drawing.Size(117, 22);
             this.tsmEliminarSesion.Text = "Eliminar";
             this.tsmEliminarSesion.Click += new System.EventHandler(this.tsmEliminarSesion_Click);
             // 
@@ -170,7 +172,7 @@
             this.Controls.Add(this.mnsSesion);
             this.MainMenuStrip = this.mnsSesion;
             this.Name = "ListaSesionesFrm";
-            this.Text = "ListaSesionesFrm";
+            this.Text = "Sesiones";
             this.mnsSesion.ResumeLayout(false);
             this.mnsSesion.PerformLayout();
             this.cmsSesion.ResumeLayout(false);
@@ -184,7 +186,7 @@
         private System.Windows.Forms.MenuStrip mnsSesion;
         private System.Windows.Forms.ToolStripMenuItem sesionesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem crearSesionToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem informeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tsmCuadricula;
         private System.Windows.Forms.ListView lvSesiones;
         private System.Windows.Forms.ColumnHeader Salas;
         private System.Windows.Forms.ColumnHeader Dia;

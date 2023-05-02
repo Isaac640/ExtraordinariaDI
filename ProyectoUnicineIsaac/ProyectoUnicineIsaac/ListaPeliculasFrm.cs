@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoUnicineIsaac.Reports;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,10 +14,12 @@ namespace ProyectoUnicineIsaac
     public partial class ListaPeliculasFrm : Form
     {
         private Cliente _cliente;
+        private Generador _generador;
         public ListaPeliculasFrm()
         {
             InitializeComponent();
             _cliente = new Cliente();
+            _generador = new Generador();
             RefrescarLista();
         }
 
@@ -53,8 +56,10 @@ namespace ProyectoUnicineIsaac
 
         private void tsrVerPelicula_Click(object sender, EventArgs e)
         {
-            foreach (ListViewItem item in lvPeliculas.SelectedItems)
+            int i = 0;
+            while (i < lvPeliculas.SelectedItems.Count)
             {
+                ListViewItem item = lvPeliculas.SelectedItems[i];
                 int idPeli = (int)item.Tag;
                 Pelicula peliculaSeleccionada = _cliente.ObtenerPelicula(idPeli);
                 PeliculaFrm infoPelicula = new PeliculaFrm(peliculaSeleccionada);
@@ -64,6 +69,8 @@ namespace ProyectoUnicineIsaac
                     _cliente.ActualizarPelicula(peliculaSeleccionada);
                     RefrescarLista();
                 }
+
+                i++;
             }
         }
 
@@ -83,6 +90,31 @@ namespace ProyectoUnicineIsaac
                 tsrEliminarPelicula.Enabled = true;
                 tsrVerPelicula.Enabled = true;
             }
+        }
+
+        private void fichaDePeliculaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            if (lvPeliculas.SelectedItems.Count > 0)
+            {
+                //localizar a partir del id de la lista la pelicula entera
+                ListViewItem peliSeleccionada = lvPeliculas.SelectedItems[0];
+
+                int id = (int)peliSeleccionada.Tag;
+
+                _generador.CargarInformePeliculas(id);
+            }
+        }
+
+        private void tsmCategorias_Click(object sender, EventArgs e)
+        {
+            string Genero = " ";
+            GeneroInforme generoInforme = new GeneroInforme(Genero);
+            if (generoInforme.ShowDialog() == DialogResult.OK)
+            {
+                _generador.CargarCategorias(Genero);
+            }
+            
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoUnicineIsaac.Reports;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,6 +14,8 @@ namespace ProyectoUnicineIsaac
     public partial class ListaSesionesFrm : Form
     {
         private Cliente _cliente;
+        private Generador _generador = new Generador();
+
         public ListaSesionesFrm()
         {
             InitializeComponent();
@@ -84,6 +87,11 @@ namespace ProyectoUnicineIsaac
                 tsmEliminarSesion.Enabled = true;
                 tsmVerSesion.Enabled = true;
             }
+        }
+
+        private void informeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            _generador.CargarCuadriculaSesiones();
         }
     }
 }
