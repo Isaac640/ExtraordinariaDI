@@ -14,9 +14,9 @@ namespace ProyectoUnicineIsaac
         {
         }
 
-        public Cliente(UniCineBD bd)
+        public Cliente(UniCineBD baseDatos)
         {
-
+            bd = baseDatos;
         }
 
 
@@ -130,21 +130,34 @@ namespace ProyectoUnicineIsaac
             x.PeliculaId == peliculaId && x.Inicio == fechaIni);
         }
 
-        public void CrearProyeccion(Proyeccion SesionNueva)
+        public void CrearProyeccion(Proyeccion ProyeccionNueva)
         {
-            bd.Proyecciones.Add(SesionNueva);
-            bd.SaveChanges();
-        }
-
-        public void ActualizarProyeccion(Proyeccion sesionMod)
-        {
-            Proyeccion sesion = bd.Proyecciones.FirstOrDefault(x => x.SesionId == sesionMod.SesionId);
-
-            if (sesion != null)
+            Pelicula p = ObtenerPelicula(ProyeccionNueva.PeliculaId);
+            Sesion s = ObtenerSesion(ProyeccionNueva.SesionId);
+            TimeSpan periodo = s.Comienzo - s.FinMax;
+            if (p.Duracion <= periodo.TotalMinutes)
             {
-                bd.Entry(sesion).CurrentValues.SetValues(sesionMod);
+                throw new ApplicationException("La pelicula no puede durar igual o menos que el periodo de fechas de la sesión");
+            }
+            else
+            {
+                bd.Proyecciones.Add(ProyeccionNueva);
                 bd.SaveChanges();
             }
+
+
+        }
+
+        public void ActualizarProyeccion(Proyeccion proyeccionMod)
+        {
+            Proyeccion proyeccion = bd.Proyecciones.FirstOrDefault(x => x.SesionId == proyeccionMod.SesionId);
+
+            if (proyeccion != null)
+            {
+                bd.Entry(proyeccion).CurrentValues.SetValues(proyeccionMod);
+                bd.SaveChanges();
+            }
+
         }
 
         public void EliminarProyeccion(Proyeccion proEliminar)
