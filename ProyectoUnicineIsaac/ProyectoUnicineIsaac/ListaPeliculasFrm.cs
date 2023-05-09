@@ -15,6 +15,7 @@ namespace ProyectoUnicineIsaac
     {
         private Cliente _cliente;
         private Generador _generador;
+
         public ListaPeliculasFrm()
         {
             InitializeComponent();
