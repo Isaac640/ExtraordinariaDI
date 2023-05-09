@@ -17,6 +17,8 @@ namespace ProyectoUnicineIsaac
         {
             InitializeComponent();
             sesi = new Sesion();
+            cmbSalas.SelectedIndex = 0;
+            cmbDia.SelectedIndex = 0;
         }
         public SesionFrm(Sesion sesion) : this()
         {

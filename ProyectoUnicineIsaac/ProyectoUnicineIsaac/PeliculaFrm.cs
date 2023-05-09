@@ -17,6 +17,8 @@ namespace ProyectoUnicineIsaac
         {
             InitializeComponent();
             peli = new Pelicula();
+            cmbCategoria.SelectedIndex = 0;
+            cmbGenero.SelectedIndex = 0;
         }
 
         public PeliculaFrm(Pelicula pelicula) : this()

@@ -10,9 +10,7 @@ namespace ProyectoUnicineIsaac
     {
         private UniCineBD bd = new UniCineBD();
 
-        public Cliente()
-        {
-        }
+        public Cliente(){}
 
         public Cliente(UniCineBD baseDatos)
         {
