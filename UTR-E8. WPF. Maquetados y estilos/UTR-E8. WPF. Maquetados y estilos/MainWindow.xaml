@@ -1,0 +1,58 @@
+﻿<Window x:Class="UTR_E8.WPF.Maquetados_y_estilos.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UTR_E8.WPF.Maquetados_y_estilos"
+        mc:Ignorable="d"
+        Title="Gestor de eventos" Height="450" Width="450">
+    <Grid>
+        <!--Nombre-->
+        <Label Content="Nombre: " Width="59" Height="23" Margin="-320,0,0,350"/>
+        <TextBox x:Name="txtNombre" Width="310" Height="23" Margin="90 ,0 ,0 ,350"/>
+        
+        <!--Fecha y hora-->
+        <Label Content="Fecha: " Width="59" Height="23" Margin="-320,0,0,280"/>
+        <DatePicker x:Name="dtpFecha" Width="120" Height="23" Margin="-102,0,0,280"/>
+
+        <Label Content="Hora: " Width="59" Height="23" Margin="100,0,0,280"/>
+        <TextBox x:Name="txtHora" Width="100" Height="23" Margin="300,0,0,280"/>
+        
+        <!--Aforo y promotor-->
+        <Label Content="Aforo: " Width="59" Height="23" Margin="-320,0,0,220"/>
+        <TextBox x:Name="txtAforo" Width="120" Height="23" Margin="-100,0,0,220"/>
+
+        <Label Content="Promotor:" Width="65" Height="23" Margin="105,0,0,220"/>
+        <ComboBox x:Name="cmbPromotor" Width="100" Height="23" Margin="300,0,0,220">
+            <ComboBoxItem Content="Festejos" IsSelected="true"/>
+            <ComboBoxItem Content="Deportes" />
+            <ComboBoxItem Content="Educacion" />
+            <ComboBoxItem Content="Externo" />
+        </ComboBox>
+        
+        <!--Tipo-->
+        <Label Content="Tipo: " Width="59" Height="25" Margin="-320,0,0,140"/>
+        
+        <RadioButton GroupName="rbTipo" x:Name="rbTodos" Click="RadioButton_Click" Tag="Todos" Content="Todos" Width="59" Height="23" Margin="-160,0,0,130" />
+        <RadioButton GroupName="rbTipo" x:Name="rbM10" Click="RadioButton_Click" Tag="&lt;10" Content="&lt;10" Width="59" Height="23" Margin="-30,0,0,130" />
+        <RadioButton GroupName="rbTipo" x:Name="rbM16" Click="RadioButton_Click" Tag="&gt;16" Content="&gt;16" Width="59" Height="23" Margin="90,0,0,130" />
+        <RadioButton GroupName="rbTipo" x:Name="rbM18" Click="RadioButton_Click" Tag="&gt;18" Content="&gt;18" Width="59" Height="23" Margin="200,0,0,130" />
+    
+        <!--Panel de requisitos-->
+        <GroupBox x:Name="gbRequisitos" Width="400" Height="100" Header="Requisitos">
+            <Grid>
+                <CheckBox x:Name="cbSeguridad" Content="Seguridad" Width="80" Height="20" Margin="-275,0,0,40"/>
+                <CheckBox x:Name="cbBar" Content="Bar" Width="80" Height="20" Margin="-275,0,0,-40"/>
+                <CheckBox x:Name="cbMontaje" Content="Montaje" Width="80" Height="20" Margin="100,0,0,40"/>
+                <CheckBox x:Name="cbSanitarios" Content="Sanitarios" Width="80" Height="20" Margin="100,0,0,-40"/>
+            </Grid>
+        </GroupBox>
+        
+        <!--Descripcion-->
+        <Label Content="Descripcion: " Width="75" Height="25" Margin="-320,0,0,-125"/>
+        <TextBox x:Name="txtDescripcion" Width="400" Height="75" Margin="0,0,0,-225" AutoWordSelection="True" TextWrapping="Wrap"/>
+        
+        <!--Boton Mostrar-->
+        <Button x:Name="btnMostrar" Content="Mostrar" Click="btnMostrar_Click" Width="75" Height="25" Margin="320,0,0,-350"/>
+    </Grid>
+</Window>

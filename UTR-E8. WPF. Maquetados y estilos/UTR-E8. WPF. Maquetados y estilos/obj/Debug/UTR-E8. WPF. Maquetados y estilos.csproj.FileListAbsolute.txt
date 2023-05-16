@@ -1,0 +1,16 @@
+C:\Codigo\EXTRAORDINARIA\ExtraordinariaDI\UTR-E8. WPF. Maquetados y estilos\UTR-E8. WPF. Maquetados y estilos\bin\Debug\UTR_E8.WPF.Maquetados_y_estilos.exe.config
+C:\Codigo\EXTRAORDINARIA\ExtraordinariaDI\UTR-E8. WPF. Maquetados y estilos\UTR-E8. WPF. Maquetados y estilos\bin\Debug\UTR_E8.WPF.Maquetados_y_estilos.exe
+C:\Codigo\EXTRAORDINARIA\ExtraordinariaDI\UTR-E8. WPF. Maquetados y estilos\UTR-E8. WPF. Maquetados y estilos\bin\Debug\UTR_E8.WPF.Maquetados_y_estilos.pdb
+C:\Codigo\EXTRAORDINARIA\ExtraordinariaDI\UTR-E8. WPF. Maquetados y estilos\UTR-E8. WPF. Maquetados y estilos\obj\Debug\UTR-E8. WPF. Maquetados y estilos.csproj.AssemblyReference.cache
+C:\Codigo\EXTRAORDINARIA\ExtraordinariaDI\UTR-E8. WPF. Maquetados y estilos\UTR-E8. WPF. Maquetados y estilos\obj\Debug\UTR-E8. WPF. Maquetados y estilos.csproj.SuggestedBindingRedirects.cache
+C:\Codigo\EXTRAORDINARIA\ExtraordinariaDI\UTR-E8. WPF. Maquetados y estilos\UTR-E8. WPF. Maquetados y estilos\obj\Debug\MainWindow.g.cs
+C:\Codigo\EXTRAORDINARIA\ExtraordinariaDI\UTR-E8. WPF. Maquetados y estilos\UTR-E8. WPF. Maquetados y estilos\obj\Debug\App.g.cs
+C:\Codigo\EXTRAORDINARIA\ExtraordinariaDI\UTR-E8. WPF. Maquetados y estilos\UTR-E8. WPF. Maquetados y estilos\obj\Debug\UTR_E8.WPF.Maquetados_y_estilos_MarkupCompile.cache
+C:\Codigo\EXTRAORDINARIA\ExtraordinariaDI\UTR-E8. WPF. Maquetados y estilos\UTR-E8. WPF. Maquetados y estilos\obj\Debug\UTR_E8.WPF.Maquetados_y_estilos_MarkupCompile.lref
+C:\Codigo\EXTRAORDINARIA\ExtraordinariaDI\UTR-E8. WPF. Maquetados y estilos\UTR-E8. WPF. Maquetados y estilos\obj\Debug\MainWindow.baml
+C:\Codigo\EXTRAORDINARIA\ExtraordinariaDI\UTR-E8. WPF. Maquetados y estilos\UTR-E8. WPF. Maquetados y estilos\obj\Debug\UTR_E8.WPF.Maquetados_y_estilos.g.resources
+C:\Codigo\EXTRAORDINARIA\ExtraordinariaDI\UTR-E8. WPF. Maquetados y estilos\UTR-E8. WPF. Maquetados y estilos\obj\Debug\UTR_E8.WPF.Maquetados_y_estilos.Properties.Resources.resources
+C:\Codigo\EXTRAORDINARIA\ExtraordinariaDI\UTR-E8. WPF. Maquetados y estilos\UTR-E8. WPF. Maquetados y estilos\obj\Debug\UTR-E8. WPF. Maquetados y estilos.csproj.GenerateResource.cache
+C:\Codigo\EXTRAORDINARIA\ExtraordinariaDI\UTR-E8. WPF. Maquetados y estilos\UTR-E8. WPF. Maquetados y estilos\obj\Debug\UTR-E8. WPF. Maquetados y estilos.csproj.CoreCompileInputs.cache
+C:\Codigo\EXTRAORDINARIA\ExtraordinariaDI\UTR-E8. WPF. Maquetados y estilos\UTR-E8. WPF. Maquetados y estilos\obj\Debug\UTR_E8.WPF.Maquetados_y_estilos.exe
+C:\Codigo\EXTRAORDINARIA\ExtraordinariaDI\UTR-E8. WPF. Maquetados y estilos\UTR-E8. WPF. Maquetados y estilos\obj\Debug\UTR_E8.WPF.Maquetados_y_estilos.pdb

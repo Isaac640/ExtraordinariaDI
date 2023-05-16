@@ -1,0 +1,9 @@
+﻿<Application x:Class="UTR_E8.WPF.Maquetados_y_estilos.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:UTR_E8.WPF.Maquetados_y_estilos"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>
