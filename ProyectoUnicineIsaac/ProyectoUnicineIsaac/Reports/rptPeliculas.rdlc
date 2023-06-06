@@ -323,7 +323,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=IIF(IsNothing(Fields!Fin.Value), "Sin fecha", FormatDateTime(Fields!Inicio.Value, DateFormat.ShortDate))</Value>
+                                  <Value>=IIF(IsNothing(Fields!Fin.Value), "Sin fecha", Fields!Fin.Value)</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -342,7 +342,6 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>

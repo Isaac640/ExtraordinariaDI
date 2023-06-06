@@ -20,12 +20,12 @@ namespace ProyectoUnicineIsaac.Reports
             visor.rpvInforme.LocalReport.ReportEmbeddedResource = "ProyectoUnicineIsaac.Reports.rptPeliculas.rdlc";
 
             string consultaPeliculas =
-            "SELECT p.Nombre, p.Categoria, p.Genero, p.Anno, p.Duracion, " +
+            "select p.Nombre, p.Categoria, p.Genero, p.Anno, p.Duracion, " +
             "pr.Inicio, pr.Fin, s.DiaSemana, s.Comienzo, s.Sala, s.Precio " +
-            "FROM Peliculas AS p " +
-            "INNER JOIN Proyecciones AS pr ON pr.PeliculaId = p.PeliculaId " +
-            "INNER JOIN Sesiones AS s ON s.SesionId = pr.SesionId " +
-            "WHERE p.PeliculaId = " + peliculaID + " ;";
+            "FROM Peliculas as p " +
+            "inner join Proyecciones as pr on pr.PeliculaId = p.PeliculaId " +
+            "inner join Sesiones as s on s.SesionId = pr.SesionId " +
+            "where p.PeliculaId = " + peliculaID + " ;";
 
             UniCineBD ctx = new UniCineBD();
             List<PeliculasWr> listaPeliculas = ctx.Database.SqlQuery<PeliculasWr>(consultaPeliculas, new object[0]).ToList();
@@ -38,7 +38,7 @@ namespace ProyectoUnicineIsaac.Reports
 
             ReportParameter parametroNombre = new ReportParameter("NombrePelicula", "Nombre: " + p.Nombre);
             ReportParameter parametroCategoria = new ReportParameter("CategoriaPelicula", "Categoria: " + p.Categoria);
-            ReportParameter parametroGenero = new ReportParameter("GeneroPelicula", "Género: " + p.Genero);
+            ReportParameter parametroGenero = new ReportParameter("GeneroPelicula","Género: " + p.Genero);
             ReportParameter parametroAnio = new ReportParameter("AnnoPelicula", "Año: " + p.Anno.ToString());
             ReportParameter parametroDuracion = new ReportParameter("DuracionPelicula", "Duración: " + p.Duracion.ToString() + " Minutos");
 
@@ -84,12 +84,11 @@ namespace ProyectoUnicineIsaac.Reports
             VisorInforme visor = new VisorInforme();
             visor.rpvInforme.LocalReport.ReportEmbeddedResource = "ProyectoUnicineIsaac.Reports.rptProyecciones.rdlc";
 
-            string consultaProyecciones =
-               "SELECT  s.DiaSemana, p.Nombre, p.Genero, p.Duracion, p.Categoria, pr.Inicio, pr.Fin " +
-               "FROM Sesiones AS s " +
-               "INNER JOIN Proyecciones AS pr ON pr.SesionId = s.SesionId " +
-               "INNER JOIN Peliculas AS p ON p.PeliculaId = pr.PeliculaId " +
-               "ORDER BY s.DiaSemana, pr.Inicio;";
+            string consultaProyecciones = "SELECT  s.DiaSemana, p.Nombre, p.Genero, p.Duracion, p.Categoria, pr.Inicio, pr.Fin " +
+               "FROM Sesiones as s " +
+               "inner join Proyecciones as pr on pr.SesionId = s.SesionId " +
+               "inner join Peliculas as p on p.PeliculaId = pr.PeliculaId " +
+               "order by s.DiaSemana, pr.Inicio;";
 
             UniCineBD ctx = new UniCineBD();
             List<ProyeccionesWr> listaProyecciones = ctx.Database.SqlQuery<ProyeccionesWr>(consultaProyecciones, new object[0]).ToList();
@@ -112,10 +111,9 @@ namespace ProyectoUnicineIsaac.Reports
             VisorInforme visor = new VisorInforme();
             visor.rpvInforme.LocalReport.ReportEmbeddedResource = "ProyectoUnicineIsaac.Reports.rptGenero.rdlc";
 
-            string consultaCategoria =
-                "SELECT p.Nombre, p.anno, p.duracion, p.categoria, p.sinopsis, p.Genero " +
-                "FROM Peliculas AS p " +
-                "WHERE p.Genero = '" + GeneroSeleccionado + "'; ";
+            string consultaCategoria = "SELECT p.Nombre, p.anno, p.duracion, p.categoria, p.sinopsis, p.Genero " +
+                "FROM Peliculas as p " +
+                "where p.Genero = '" + GeneroSeleccionado + "'; ";
 
             UniCineBD ctx = new UniCineBD();
             List<GeneroWr> listaPeliculaGeneros = ctx.Database.SqlQuery<GeneroWr>(consultaCategoria, new object[0]).ToList();
@@ -133,7 +131,7 @@ namespace ProyectoUnicineIsaac.Reports
         }
     }
 }
-
+    
 
 
 

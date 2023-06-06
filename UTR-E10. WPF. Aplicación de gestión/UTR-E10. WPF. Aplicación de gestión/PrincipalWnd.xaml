@@ -1,0 +1,40 @@
+﻿<Window x:Class="UTR_E10.WPF.Aplicación_de_gestión.PrincipalWnd"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UTR_E10.WPF.Aplicación_de_gestión"
+        mc:Ignorable="d"
+        Title="PrincipalWnd" Height="470" Width="820">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="101*" />
+            <ColumnDefinition Width="350*" />
+            <ColumnDefinition Width="349*" />
+        </Grid.ColumnDefinitions>
+
+        <Button x:Name="btnNueva" Width="60" Height="23" Content="Nueva" Margin="0,0,380,400" Grid.ColumnSpan="2" Grid.Column="0"/>
+
+        <Button x:Name="btnHardware" Width="80" Height="23" Content="Hardware" Margin="0,0,360,330" Grid.ColumnSpan="2" Grid.Column="0" Click="btnHardware_Click"/>
+        <Button x:Name="btnSoftware" Width="80" Height="23" Content="Software" Margin="0,0,360,260" Grid.ColumnSpan="2" Grid.Column="0" Click="btnSoftware_Click"/>
+        <Button x:Name="btnOtros" Width="80" Height="23" Content="Otros" Margin="0,0,360,190" Grid.ColumnSpan="2" Grid.Column="0" Click="btnOtros_Click"/>
+
+        <TextBox x:Name="txtFiltro" Width="285" Height="23" Margin="0,0,20,400" Grid.ColumnSpan="2"/>
+        <Button x:Name="btnBuscar" Width="65" Height="23" Content="Buscar" Margin="240,0,0,400" Grid.Column="1" Grid.ColumnSpan="1" Click="btnBuscar_Click"/>
+
+        <CheckBox x:Name="cbAbiertas" Content="Abiertas" Width="70" Height="22" Grid.Column="1" Margin="0,0,280,340"/>
+        <CheckBox x:Name="cbCerradas" Content="Cerradas" Width="70" Height="22" Grid.Column="1" Margin="0, 0,40,340"/>
+        <CheckBox x:Name="cbTodas" Content="Todas" Width="55" Height="22" Grid.Column="1" Margin="200,0,0,340"/>
+
+        <ListView x:Name="lvIncidencias" Width="340" Height="370" Margin="0,50,20,0" Grid.Column="1" ScrollViewer.VerticalScrollBarVisibility="Visible">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Fecha" Width="70"  DisplayMemberBinding="{Binding Fecha, StringFormat='dd/MM/yyyy'}"/>
+                    <GridViewColumn Header="Descripcion" Width="180"  DisplayMemberBinding="{Binding Descripcion}"/>
+                    <GridViewColumn Header="Estado" Width="70"  DisplayMemberBinding="{Binding Estado}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        
+    </Grid>
+</Window>

@@ -9,18 +9,11 @@
       </ConnectionProperties>
       <rd:DataSourceID>86327772-eebc-4d6c-bf2d-c169e50f746c</rd:DataSourceID>
     </DataSource>
-    <DataSource Name="ProyectoUnicineIsaacReports1">
-      <ConnectionProperties>
-        <DataProvider>System.Data.DataSet</DataProvider>
-        <ConnectString>/* Local Connection */</ConnectString>
-      </ConnectionProperties>
-      <rd:DataSourceID>c4302c73-5139-4322-ad22-e1605b2c93cf</rd:DataSourceID>
-    </DataSource>
   </DataSources>
   <DataSets>
     <DataSet Name="DataSetGenero">
       <Query>
-        <DataSourceName>ProyectoUnicineIsaacReports1</DataSourceName>
+        <DataSourceName>ProyectoUnicineIsaacReports</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
@@ -429,7 +422,6 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                   </TablixCells>

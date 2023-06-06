@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
+            this.cbGenero = new System.Windows.Forms.ComboBox();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnAceptar = new System.Windows.Forms.Button();
-            this.cbGenero = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -42,6 +42,20 @@
             this.label1.Size = new System.Drawing.Size(117, 13);
             this.label1.TabIndex = 4;
             this.label1.Text = "Elija el genero deseado";
+            // 
+            // cbGenero
+            // 
+            this.cbGenero.FormattingEnabled = true;
+            this.cbGenero.Items.AddRange(new object[] {
+            "Terror",
+            "Comedia",
+            "Aventura",
+            "Acción",
+            "Romance"});
+            this.cbGenero.Location = new System.Drawing.Point(27, 56);
+            this.cbGenero.Name = "cbGenero";
+            this.cbGenero.Size = new System.Drawing.Size(157, 21);
+            this.cbGenero.TabIndex = 5;
             // 
             // btnCancelar
             // 
@@ -64,21 +78,6 @@
             this.btnAceptar.UseVisualStyleBackColor = true;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
-            // cbGenero
-            // 
-            this.cbGenero.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbGenero.FormattingEnabled = true;
-            this.cbGenero.Items.AddRange(new object[] {
-            "Terror",
-            "Comedia",
-            "Aventura",
-            "Acción",
-            "Romance"});
-            this.cbGenero.Location = new System.Drawing.Point(27, 50);
-            this.cbGenero.Name = "cbGenero";
-            this.cbGenero.Size = new System.Drawing.Size(166, 21);
-            this.cbGenero.TabIndex = 8;
-            // 
             // GeneroInforme
             // 
             this.AcceptButton = this.btnAceptar;
@@ -86,9 +85,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancelar;
             this.ClientSize = new System.Drawing.Size(218, 135);
-            this.Controls.Add(this.cbGenero);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.cbGenero);
             this.Controls.Add(this.label1);
             this.Name = "GeneroInforme";
             this.Text = "Categoria";
@@ -99,8 +98,8 @@
 
         #endregion
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cbGenero;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnAceptar;
-        private System.Windows.Forms.ComboBox cbGenero;
     }
 }

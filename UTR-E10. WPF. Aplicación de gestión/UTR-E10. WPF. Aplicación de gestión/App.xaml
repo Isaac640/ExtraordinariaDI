@@ -1,0 +1,9 @@
+﻿<Application x:Class="UTR_E10.WPF.Aplicación_de_gestión.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:UTR_E10.WPF.Aplicación_de_gestión"
+             StartupUri="PrincipalWnd.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

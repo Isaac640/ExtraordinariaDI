@@ -1,0 +1,35 @@
+C:\Codigo\UTR-E9. WPF. Listas, máscaras y conversores\UTR-E9. WPF. Listas, máscaras y conversores\bin\Debug\UTR_E9.WPF.Listas__máscaras_y_conversores.exe.config
+C:\Codigo\UTR-E9. WPF. Listas, máscaras y conversores\UTR-E9. WPF. Listas, máscaras y conversores\bin\Debug\UTR_E9.WPF.Listas__máscaras_y_conversores.exe
+C:\Codigo\UTR-E9. WPF. Listas, máscaras y conversores\UTR-E9. WPF. Listas, máscaras y conversores\bin\Debug\UTR_E9.WPF.Listas__máscaras_y_conversores.pdb
+C:\Codigo\UTR-E9. WPF. Listas, máscaras y conversores\UTR-E9. WPF. Listas, máscaras y conversores\obj\Debug\UTR-E9. WPF. Listas, máscaras y conversores.csproj.AssemblyReference.cache
+C:\Codigo\UTR-E9. WPF. Listas, máscaras y conversores\UTR-E9. WPF. Listas, máscaras y conversores\obj\Debug\UTR-E9. WPF. Listas, máscaras y conversores.csproj.SuggestedBindingRedirects.cache
+C:\Codigo\UTR-E9. WPF. Listas, máscaras y conversores\UTR-E9. WPF. Listas, máscaras y conversores\obj\Debug\MainWindow.g.cs
+C:\Codigo\UTR-E9. WPF. Listas, máscaras y conversores\UTR-E9. WPF. Listas, máscaras y conversores\obj\Debug\App.g.cs
+C:\Codigo\UTR-E9. WPF. Listas, máscaras y conversores\UTR-E9. WPF. Listas, máscaras y conversores\obj\Debug\UTR_E9.WPF.Listas__máscaras_y_conversores_MarkupCompile.cache
+C:\Codigo\UTR-E9. WPF. Listas, máscaras y conversores\UTR-E9. WPF. Listas, máscaras y conversores\obj\Debug\UTR_E9.WPF.Listas__máscaras_y_conversores_MarkupCompile.lref
+C:\Codigo\UTR-E9. WPF. Listas, máscaras y conversores\UTR-E9. WPF. Listas, máscaras y conversores\obj\Debug\MainWindow.baml
+C:\Codigo\UTR-E9. WPF. Listas, máscaras y conversores\UTR-E9. WPF. Listas, máscaras y conversores\obj\Debug\UTR_E9.WPF.Listas__máscaras_y_conversores.g.resources
+C:\Codigo\UTR-E9. WPF. Listas, máscaras y conversores\UTR-E9. WPF. Listas, máscaras y conversores\obj\Debug\UTR_E9.WPF.Listas__máscaras_y_conversores.Properties.Resources.resources
+C:\Codigo\UTR-E9. WPF. Listas, máscaras y conversores\UTR-E9. WPF. Listas, máscaras y conversores\obj\Debug\UTR-E9. WPF. Listas, máscaras y conversores.csproj.GenerateResource.cache
+C:\Codigo\UTR-E9. WPF. Listas, máscaras y conversores\UTR-E9. WPF. Listas, máscaras y conversores\obj\Debug\UTR-E9. WPF. Listas, máscaras y conversores.csproj.CoreCompileInputs.cache
+C:\Codigo\UTR-E9. WPF. Listas, máscaras y conversores\UTR-E9. WPF. Listas, máscaras y conversores\obj\Debug\UTR_E9.WPF.Listas__máscaras_y_conversores.exe
+C:\Codigo\UTR-E9. WPF. Listas, máscaras y conversores\UTR-E9. WPF. Listas, máscaras y conversores\obj\Debug\UTR_E9.WPF.Listas__máscaras_y_conversores.pdb
+C:\CODIGO\EXTRAORDINARIA\UTR-E9. WPF. Listas, máscaras y conversores\UTR-E9. WPF. Listas, máscaras y conversores\bin\Debug\UTR_E9.WPF.Listas__máscaras_y_conversores.exe.config
+C:\CODIGO\EXTRAORDINARIA\UTR-E9. WPF. Listas, máscaras y conversores\UTR-E9. WPF. Listas, máscaras y conversores\bin\Debug\UTR_E9.WPF.Listas__máscaras_y_conversores.exe
+C:\CODIGO\EXTRAORDINARIA\UTR-E9. WPF. Listas, máscaras y conversores\UTR-E9. WPF. Listas, máscaras y conversores\bin\Debug\UTR_E9.WPF.Listas__máscaras_y_conversores.pdb
+C:\CODIGO\EXTRAORDINARIA\UTR-E9. WPF. Listas, máscaras y conversores\UTR-E9. WPF. Listas, máscaras y conversores\obj\Debug\UTR-E9. WPF. Listas, máscaras y conversores.csproj.AssemblyReference.cache
+C:\CODIGO\EXTRAORDINARIA\UTR-E9. WPF. Listas, máscaras y conversores\UTR-E9. WPF. Listas, máscaras y conversores\obj\Debug\UTR-E9. WPF. Listas, máscaras y conversores.csproj.SuggestedBindingRedirects.cache
+C:\CODIGO\EXTRAORDINARIA\UTR-E9. WPF. Listas, máscaras y conversores\UTR-E9. WPF. Listas, máscaras y conversores\obj\Debug\MainWindow.g.cs
+C:\CODIGO\EXTRAORDINARIA\UTR-E9. WPF. Listas, máscaras y conversores\UTR-E9. WPF. Listas, máscaras y conversores\obj\Debug\VentanaReserva.g.cs
+C:\CODIGO\EXTRAORDINARIA\UTR-E9. WPF. Listas, máscaras y conversores\UTR-E9. WPF. Listas, máscaras y conversores\obj\Debug\App.g.cs
+C:\CODIGO\EXTRAORDINARIA\UTR-E9. WPF. Listas, máscaras y conversores\UTR-E9. WPF. Listas, máscaras y conversores\obj\Debug\UTR_E9.WPF.Listas__máscaras_y_conversores_MarkupCompile.cache
+C:\CODIGO\EXTRAORDINARIA\UTR-E9. WPF. Listas, máscaras y conversores\UTR-E9. WPF. Listas, máscaras y conversores\obj\Debug\UTR_E9.WPF.Listas__máscaras_y_conversores_MarkupCompile.lref
+C:\CODIGO\EXTRAORDINARIA\UTR-E9. WPF. Listas, máscaras y conversores\UTR-E9. WPF. Listas, máscaras y conversores\obj\Debug\MainWindow.baml
+C:\CODIGO\EXTRAORDINARIA\UTR-E9. WPF. Listas, máscaras y conversores\UTR-E9. WPF. Listas, máscaras y conversores\obj\Debug\VentanaReserva.baml
+C:\CODIGO\EXTRAORDINARIA\UTR-E9. WPF. Listas, máscaras y conversores\UTR-E9. WPF. Listas, máscaras y conversores\obj\Debug\UTR_E9.WPF.Listas__máscaras_y_conversores.g.resources
+C:\CODIGO\EXTRAORDINARIA\UTR-E9. WPF. Listas, máscaras y conversores\UTR-E9. WPF. Listas, máscaras y conversores\obj\Debug\UTR_E9.WPF.Listas__máscaras_y_conversores.Properties.Resources.resources
+C:\CODIGO\EXTRAORDINARIA\UTR-E9. WPF. Listas, máscaras y conversores\UTR-E9. WPF. Listas, máscaras y conversores\obj\Debug\UTR-E9. WPF. Listas, máscaras y conversores.csproj.GenerateResource.cache
+C:\CODIGO\EXTRAORDINARIA\UTR-E9. WPF. Listas, máscaras y conversores\UTR-E9. WPF. Listas, máscaras y conversores\obj\Debug\UTR-E9. WPF. Listas, máscaras y conversores.csproj.CoreCompileInputs.cache
+C:\CODIGO\EXTRAORDINARIA\UTR-E9. WPF. Listas, máscaras y conversores\UTR-E9. WPF. Listas, máscaras y conversores\obj\Debug\UTR_E9.WPF.Listas__máscaras_y_conversores.exe
+C:\CODIGO\EXTRAORDINARIA\UTR-E9. WPF. Listas, máscaras y conversores\UTR-E9. WPF. Listas, máscaras y conversores\obj\Debug\UTR_E9.WPF.Listas__máscaras_y_conversores.pdb
+C:\CODIGO\EXTRAORDINARIA\UTR-E9. WPF. Listas, máscaras y conversores\UTR-E9. WPF. Listas, máscaras y conversores\obj\Debug\GeneratedInternalTypeHelper.g.cs

@@ -30,6 +30,7 @@ namespace UTR_E8.WPF.Maquetados_y_estilos
             this.txtHora.Text = evento.Hora.ToString();
             this.txtPromotor.Text = evento.Promotor;
             this.txtDescripcion.Text = evento.Descripcion;
+            this.dtpFecha.Text = evento.Fecha.Date.ToString();
             switch (evento.Tipo)
             {
                 case TipoEnum.Todos:
@@ -44,6 +45,11 @@ namespace UTR_E8.WPF.Maquetados_y_estilos
                 case TipoEnum.Menor_de_18:
                     txtTipo.Text = ">18";
                     break;
+            }
+
+            if (evento.Sanitarios)
+            {
+                this.lblRequisitos.Tag = "Sanitarios";
             }
 
         }

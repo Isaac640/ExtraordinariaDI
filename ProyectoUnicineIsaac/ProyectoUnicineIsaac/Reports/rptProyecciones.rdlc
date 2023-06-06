@@ -64,7 +64,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Cartelera semanal Universo Cinema</Value>
+                    <Value>Cartelera semana Universo Cinema</Value>
                     <Style>
                       <FontSize>26pt</FontSize>
                       <FontWeight>Normal</FontWeight>
@@ -332,47 +332,6 @@
       </Body>
       <Width>7.30592in</Width>
       <Page>
-        <PageFooter>
-          <Height>2.54cm</Height>
-          <PrintOnFirstPage>true</PrintOnFirstPage>
-          <PrintOnLastPage>true</PrintOnLastPage>
-          <ReportItems>
-            <Textbox Name="Textbox3">
-              <CanGrow>true</CanGrow>
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>=Globals.PageNumber&lt;Globals.TotalPages</Value>
-                      <Style />
-                    </TextRun>
-                  </TextRuns>
-                  <Style />
-                </Paragraph>
-              </Paragraphs>
-              <rd:DefaultName>Textbox3</rd:DefaultName>
-              <Top>1.18744cm</Top>
-              <Left>7.61683cm</Left>
-              <Height>0.6cm</Height>
-              <Width>2.5cm</Width>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-                <PaddingLeft>2pt</PaddingLeft>
-                <PaddingRight>2pt</PaddingRight>
-                <PaddingTop>2pt</PaddingTop>
-                <PaddingBottom>2pt</PaddingBottom>
-              </Style>
-            </Textbox>
-          </ReportItems>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-          </Style>
-        </PageFooter>
         <PageHeight>29.7cm</PageHeight>
         <PageWidth>21cm</PageWidth>
         <LeftMargin>2cm</LeftMargin>

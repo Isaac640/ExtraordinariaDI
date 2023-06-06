@@ -1,0 +1,9 @@
+﻿<Application x:Class="UTR_E9.WPF.Listas__máscaras_y_conversores.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:UTR_E9.WPF.Listas__máscaras_y_conversores"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

@@ -64,7 +64,6 @@
             // 
             // cmbSalas
             // 
-            this.cmbSalas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbSalas.FormattingEnabled = true;
             this.cmbSalas.Items.AddRange(new object[] {
             "SALA 1",
@@ -81,7 +80,6 @@
             // 
             // cmbDia
             // 
-            this.cmbDia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDia.FormattingEnabled = true;
             this.cmbDia.Items.AddRange(new object[] {
             "Lunes",

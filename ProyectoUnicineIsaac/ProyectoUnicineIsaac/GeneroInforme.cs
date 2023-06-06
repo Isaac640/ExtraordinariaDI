@@ -14,27 +14,27 @@ namespace ProyectoUnicineIsaac
     public partial class GeneroInforme : Form
     {
         private string _gen;
-
         public GeneroInforme()
         {
             InitializeComponent();
-            cbGenero.SelectedIndex = 0;
+            _gen = "";
+        }
+
+        public GeneroInforme(string genero) : this()
+        {
+            InitializeComponent();
+            this._gen = genero;
             this.DialogResult = DialogResult.Cancel;
         }
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            this._gen = cbGenero.SelectedItem.ToString();
+            this._gen = this.cbGenero.SelectedItem.ToString();
             this.DialogResult = DialogResult.OK;
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        public string cbGenero_Get()
-        {
-            return _gen;
         }
     }
 }

@@ -28,11 +28,6 @@ namespace UTR_E8.WPF.Maquetados_y_estilos
             _evento = new Evento();
         }
 
-        private void RadioButton_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
         private void btnMostrar_Click(object sender, RoutedEventArgs e)
         {
             if (camposObligatorios())
@@ -51,7 +46,7 @@ namespace UTR_E8.WPF.Maquetados_y_estilos
                string.IsNullOrEmpty(dtpFecha.Text) ||
                string.IsNullOrEmpty(txtHora.Text))
             {
-                MessageBox.Show("Los campos de Nombre, Fecha y Hora sion obligatorios", "Aviso", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show("Los campos de Nombre, Fecha y Hora son obligatorios", "Aviso", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
             else
             {

@@ -15,7 +15,6 @@ namespace ProyectoUnicineIsaac
     {
         private Cliente _cliente;
         private Generador _generador;
-
         public ListaPeliculasFrm()
         {
             InitializeComponent();
@@ -27,7 +26,7 @@ namespace ProyectoUnicineIsaac
         private void RefrescarLista()
         {
             this.lvPeliculas.Items.Clear();
-
+            
             _cliente.ObtenerPeliculas().ToList().ForEach(peli =>
             {
                 ListViewItem item = new ListViewItem(
@@ -109,12 +108,13 @@ namespace ProyectoUnicineIsaac
 
         private void tsmCategorias_Click(object sender, EventArgs e)
         {
-            GeneroInforme generoInforme = new GeneroInforme();
+            string Genero = " ";
+            GeneroInforme generoInforme = new GeneroInforme(Genero);
             if (generoInforme.ShowDialog() == DialogResult.OK)
             {
-                _generador.CargarCategorias(generoInforme.cbGenero_Get());
+                _generador.CargarCategorias(Genero);
             }
-
+            
         }
     }
 }

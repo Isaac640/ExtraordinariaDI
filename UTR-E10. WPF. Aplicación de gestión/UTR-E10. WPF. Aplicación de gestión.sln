@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UTR-E10. WPF. Aplicación de gestión", "UTR-E10. WPF. Aplicación de gestión\UTR-E10. WPF. Aplicación de gestión.csproj", "{33B2D179-6C44-4D6A-9C90-328643E345EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{33B2D179-6C44-4D6A-9C90-328643E345EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33B2D179-6C44-4D6A-9C90-328643E345EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33B2D179-6C44-4D6A-9C90-328643E345EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33B2D179-6C44-4D6A-9C90-328643E345EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {651BAB83-D33E-4699-BED4-8DEB70927C46}
+	EndGlobalSection
+EndGlobal
