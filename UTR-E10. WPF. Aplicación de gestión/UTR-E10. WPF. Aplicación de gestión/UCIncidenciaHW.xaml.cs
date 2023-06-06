@@ -10,6 +10,7 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace UTR_E10.WPF.Aplicación_de_gestión
@@ -17,7 +18,7 @@ namespace UTR_E10.WPF.Aplicación_de_gestión
     /// <summary>
     /// Lógica de interacción para UCIncidenciaHW.xaml
     /// </summary>
-    public partial class UCIncidenciaHW : Window
+    public partial class UCIncidenciaHW : UserControl
     {
         private IncidenciaHW _incidenciaHW;
         private UCIncidenciaHW()
@@ -47,7 +48,8 @@ namespace UTR_E10.WPF.Aplicación_de_gestión
                 this.cbEnciende.IsChecked = incidenciaHW.Enciende;
 
                 //Duele ver esto
-                if (incidenciaHW.Clase == TipoHardwareEnum.Torre){
+                if (incidenciaHW.Clase == TipoHardwareEnum.Torre)
+                {
                     this.rbTorre.IsChecked = true;
                 }
                 if (incidenciaHW.Clase == TipoHardwareEnum.Impresora)
@@ -62,21 +64,21 @@ namespace UTR_E10.WPF.Aplicación_de_gestión
 
         }
         private bool validacion()
+        {
+            bool valido = false;
+            if (string.IsNullOrEmpty(txtDesc.Text) ||
+                string.IsNullOrEmpty(dtpFecha.Text) ||
+                string.IsNullOrEmpty(txtEtiqueta.Text) ||
+                string.IsNullOrEmpty(txtObserv.Text))
             {
-                bool valido = false;
-                if (string.IsNullOrEmpty(txtDesc.Text) ||
-                    string.IsNullOrEmpty(dtpFecha.Text) ||
-                    string.IsNullOrEmpty(txtEtiqueta.Text) ||
-                    string.IsNullOrEmpty(txtObserv.Text))
-                {
-                    MessageBox.Show("Advertencia", "Algunos campos no estan rellenados", MessageBoxButton.OK, MessageBoxImage.Warning);
-                }
-                else
-                {
-                    valido = true;
-                }
-                return valido;
+                MessageBox.Show("Advertencia", "Algunos campos no estan rellenados", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
+            else
+            {
+                valido = true;
+            }
+            return valido;
+        }
 
         private void btnBorrar_Click(object sender, RoutedEventArgs e)
         {

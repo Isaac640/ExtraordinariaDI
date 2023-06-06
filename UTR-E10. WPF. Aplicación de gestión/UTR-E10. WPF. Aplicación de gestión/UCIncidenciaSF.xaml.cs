@@ -10,16 +10,17 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace UTR_E10.WPF.Aplicación_de_gestión
 {
     /// <summary>
-    /// Lógica de interacción para UCIncidenciasSF.xaml
+    /// Lógica de interacción para UCIncidenciaSF.xaml
     /// </summary>
-    public partial class UCIncidenciasSF : Window
+    public partial class UCIncidenciaSF : UserControl
     {
-        public UCIncidenciasSF()
+        public UCIncidenciaSF()
         {
             InitializeComponent();
         }

@@ -20,3 +20,25 @@ C:\CODIGO\EXTRAORDINARIA\UTR-E10. WPF. Aplicación de gestión\UTR-E10. WPF. Apl
 C:\CODIGO\EXTRAORDINARIA\UTR-E10. WPF. Aplicación de gestión\UTR-E10. WPF. Aplicación de gestión\obj\Debug\UCIncidenciaHW.baml
 C:\CODIGO\EXTRAORDINARIA\UTR-E10. WPF. Aplicación de gestión\UTR-E10. WPF. Aplicación de gestión\obj\Debug\UCIncidenciaOtros.baml
 C:\CODIGO\EXTRAORDINARIA\UTR-E10. WPF. Aplicación de gestión\UTR-E10. WPF. Aplicación de gestión\obj\Debug\UCIncidenciaSF.baml
+C:\CODIGO\EXTRAORDINARIA\ExtraordinariaDI\UTR-E10. WPF. Aplicación de gestión\UTR-E10. WPF. Aplicación de gestión\bin\Debug\UTR_E10.WPF.Aplicación_de_gestión.exe.config
+C:\CODIGO\EXTRAORDINARIA\ExtraordinariaDI\UTR-E10. WPF. Aplicación de gestión\UTR-E10. WPF. Aplicación de gestión\bin\Debug\UTR_E10.WPF.Aplicación_de_gestión.exe
+C:\CODIGO\EXTRAORDINARIA\ExtraordinariaDI\UTR-E10. WPF. Aplicación de gestión\UTR-E10. WPF. Aplicación de gestión\bin\Debug\UTR_E10.WPF.Aplicación_de_gestión.pdb
+C:\CODIGO\EXTRAORDINARIA\ExtraordinariaDI\UTR-E10. WPF. Aplicación de gestión\UTR-E10. WPF. Aplicación de gestión\obj\Debug\UTR-E10. WPF. Aplicación de gestión.csproj.AssemblyReference.cache
+C:\CODIGO\EXTRAORDINARIA\ExtraordinariaDI\UTR-E10. WPF. Aplicación de gestión\UTR-E10. WPF. Aplicación de gestión\obj\Debug\UTR-E10. WPF. Aplicación de gestión.csproj.SuggestedBindingRedirects.cache
+C:\CODIGO\EXTRAORDINARIA\ExtraordinariaDI\UTR-E10. WPF. Aplicación de gestión\UTR-E10. WPF. Aplicación de gestión\obj\Debug\PrincipalWnd.g.cs
+C:\CODIGO\EXTRAORDINARIA\ExtraordinariaDI\UTR-E10. WPF. Aplicación de gestión\UTR-E10. WPF. Aplicación de gestión\obj\Debug\UCIncidenciaHW.g.cs
+C:\CODIGO\EXTRAORDINARIA\ExtraordinariaDI\UTR-E10. WPF. Aplicación de gestión\UTR-E10. WPF. Aplicación de gestión\obj\Debug\UCIncidenciaOtros.g.cs
+C:\CODIGO\EXTRAORDINARIA\ExtraordinariaDI\UTR-E10. WPF. Aplicación de gestión\UTR-E10. WPF. Aplicación de gestión\obj\Debug\UCIncidenciaSF.g.cs
+C:\CODIGO\EXTRAORDINARIA\ExtraordinariaDI\UTR-E10. WPF. Aplicación de gestión\UTR-E10. WPF. Aplicación de gestión\obj\Debug\App.g.cs
+C:\CODIGO\EXTRAORDINARIA\ExtraordinariaDI\UTR-E10. WPF. Aplicación de gestión\UTR-E10. WPF. Aplicación de gestión\obj\Debug\UTR_E10.WPF.Aplicación_de_gestión_MarkupCompile.cache
+C:\CODIGO\EXTRAORDINARIA\ExtraordinariaDI\UTR-E10. WPF. Aplicación de gestión\UTR-E10. WPF. Aplicación de gestión\obj\Debug\UTR_E10.WPF.Aplicación_de_gestión_MarkupCompile.lref
+C:\CODIGO\EXTRAORDINARIA\ExtraordinariaDI\UTR-E10. WPF. Aplicación de gestión\UTR-E10. WPF. Aplicación de gestión\obj\Debug\PrincipalWnd.baml
+C:\CODIGO\EXTRAORDINARIA\ExtraordinariaDI\UTR-E10. WPF. Aplicación de gestión\UTR-E10. WPF. Aplicación de gestión\obj\Debug\UCIncidenciaHW.baml
+C:\CODIGO\EXTRAORDINARIA\ExtraordinariaDI\UTR-E10. WPF. Aplicación de gestión\UTR-E10. WPF. Aplicación de gestión\obj\Debug\UCIncidenciaOtros.baml
+C:\CODIGO\EXTRAORDINARIA\ExtraordinariaDI\UTR-E10. WPF. Aplicación de gestión\UTR-E10. WPF. Aplicación de gestión\obj\Debug\UCIncidenciaSF.baml
+C:\CODIGO\EXTRAORDINARIA\ExtraordinariaDI\UTR-E10. WPF. Aplicación de gestión\UTR-E10. WPF. Aplicación de gestión\obj\Debug\UTR_E10.WPF.Aplicación_de_gestión.g.resources
+C:\CODIGO\EXTRAORDINARIA\ExtraordinariaDI\UTR-E10. WPF. Aplicación de gestión\UTR-E10. WPF. Aplicación de gestión\obj\Debug\UTR_E10.WPF.Aplicación_de_gestión.Properties.Resources.resources
+C:\CODIGO\EXTRAORDINARIA\ExtraordinariaDI\UTR-E10. WPF. Aplicación de gestión\UTR-E10. WPF. Aplicación de gestión\obj\Debug\UTR-E10. WPF. Aplicación de gestión.csproj.GenerateResource.cache
+C:\CODIGO\EXTRAORDINARIA\ExtraordinariaDI\UTR-E10. WPF. Aplicación de gestión\UTR-E10. WPF. Aplicación de gestión\obj\Debug\UTR-E10. WPF. Aplicación de gestión.csproj.CoreCompileInputs.cache
+C:\CODIGO\EXTRAORDINARIA\ExtraordinariaDI\UTR-E10. WPF. Aplicación de gestión\UTR-E10. WPF. Aplicación de gestión\obj\Debug\UTR_E10.WPF.Aplicación_de_gestión.exe
+C:\CODIGO\EXTRAORDINARIA\ExtraordinariaDI\UTR-E10. WPF. Aplicación de gestión\UTR-E10. WPF. Aplicación de gestión\obj\Debug\UTR_E10.WPF.Aplicación_de_gestión.pdb
