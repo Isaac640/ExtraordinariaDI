@@ -8,7 +8,7 @@
         Title="PrincipalWnd" Height="470" Width="820">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="101*" />
+            <ColumnDefinition Width="101*"/>
             <ColumnDefinition Width="350*" />
             <ColumnDefinition Width="349*" />
         </Grid.ColumnDefinitions>
@@ -35,6 +35,7 @@
                 </GridView>
             </ListView.View>
         </ListView>
-        
+
+
     </Grid>
 </Window>

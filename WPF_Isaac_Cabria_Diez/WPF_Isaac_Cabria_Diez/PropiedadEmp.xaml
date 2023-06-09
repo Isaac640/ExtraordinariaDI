@@ -1,0 +1,42 @@
+﻿<Window x:Class="WPF_Isaac_Cabria_Diez.PropiedadEmp"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Isaac_Cabria_Diez"
+        mc:Ignorable="d"
+        Title="PropiedadEmp" Height="155" Width="800" ResizeMode="NoResize">
+    <Grid>
+        <Label Content="Nombre:" Width="58" Height="24" Margin="0,0,700,80"/>
+        <TextBox x:Name="txtNombre" Width="160" Height="24" Margin="0,0,475,80"/>
+
+        <Label Content="Nacimiento:" Width="76" Height="24" Margin="0,0,715,20"/>
+        <DatePicker x:Name="dtpNacimiento" Width="160" Height="24" Margin="0,0,475,20"/>
+
+        <Label Content="Salario:" Width="49" Height="24" Margin="0,40,690,0"/>
+        <TextBox x:Name="txtSalario" Width="160" Height="24" Margin="0,40,475,0"/>
+
+        
+        <Label Content="Apellidos:"  Width="76" Height="24" Margin="0,0,170,80" />
+        <TextBox x:Name="txtApellidos" Width="340" Height="24" Margin="300,0,70,80" />
+
+        <Label Content="Telefono:"  Width="60" Height="24" Margin="0,0,170,20" />
+        <TextBox x:Name="txtTlfn" Width="150" Height="24" Margin="110,0,70,20" />
+
+        <Label Content="Activo:"  Width="46" Height="24" Margin="0,40,170,0" />
+        <CheckBox x:Name="cbActivo" Width="18" Height="20" Margin="100,40,70,0" />
+
+        <Label Content="Departamento"  Width="89" Height="24" Margin="280,40,0,0" />
+        <ComboBox x:Name="cmbDept" Width="140" Height="24" Margin="500,40,0,0">
+            <ComboBoxItem Content="Finanzas" IsSelected ="True"/>
+            <ComboBoxItem Content="Marketing" />
+            <ComboBoxItem Content="Recursos Humanos"/>
+            <ComboBoxItem Content="Ventas" IsSelected ="True"/>
+        </ComboBox>
+        
+        <Button x:Name="btnAceptar" Content="Aceptar" Height="24" Width="55" Margin="710,0,0,80" Click="btnAceptar_Click"/>
+        <Button x:Name="btnCancelar" Content="Cancelar" Height="24" Width="55" Margin="710,0,0,20" Click="btnCancelar_Click"/>
+        
+        
+    </Grid>
+</Window>

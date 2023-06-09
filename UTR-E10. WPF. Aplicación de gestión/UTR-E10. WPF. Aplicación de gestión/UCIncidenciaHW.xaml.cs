@@ -21,11 +21,11 @@ namespace UTR_E10.WPF.Aplicación_de_gestión
     public partial class UCIncidenciaHW : UserControl
     {
         private IncidenciaHW _incidenciaHW;
-        private UCIncidenciaHW()
+        public UCIncidenciaHW()
         {
             InitializeComponent();
             _incidenciaHW = new IncidenciaHW();
-            dtpFecha.SelectedDate = DateTime.Today;
+            dtpFecha.Text = string.Empty;
         }
 
         public UCIncidenciaHW(IncidenciaHW incidenciaHW) : this()
@@ -82,12 +82,29 @@ namespace UTR_E10.WPF.Aplicación_de_gestión
 
         private void btnBorrar_Click(object sender, RoutedEventArgs e)
         {
-
-        }
+            this.txtDesc.Text = string.Empty;
+            this.txtObserv.Text = string.Empty;
+            this.dtpFecha.Text = string.Empty;
+            this.txtEtiqueta.Text = string.Empty;
+            this.cbCerrada.IsChecked = false;
+            this.cbEnciende.IsChecked = false;
+            this.rbTorre.IsChecked = false;
+            this.rbImpresora.IsChecked = false; 
+            this.rbRed.IsChecked = false; 
+        } 
 
         private void btnAceptar_Click(object sender, RoutedEventArgs e)
         {
+            if (validacion())
+            {
+                this._incidenciaHW.Enciende = this.cbEnciende.IsChecked.Value;
+                this._incidenciaHW.Cerrada = this.cbCerrada.IsChecked.Value;
+                this._incidenciaHW.Descripcion = this.txtDesc.Text;
+                this._incidenciaHW.Etiqueta = this.txtEtiqueta.Text;
+                this._incidenciaHW.Observaciones = this.txtObserv.Text;
+                this._incidenciaHW.Fecha = this.dtpFecha.SelectedDate.Value;
 
+            }
         }
     }
 }

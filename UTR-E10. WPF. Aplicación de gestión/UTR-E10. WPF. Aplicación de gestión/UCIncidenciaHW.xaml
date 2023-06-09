@@ -6,7 +6,41 @@
              xmlns:local="clr-namespace:UTR_E10.WPF.Aplicación_de_gestión"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
+
     <Grid>
-            
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Button x:Name="btnBorrar" Width="80" Height="25" Content="Borrar" Margin="430,10,0,370" Click="btnBorrar_Click"/>
+        <Button x:Name="btnAceptar" Width="80" Height="25" Content="Aceptar" Margin="600,10,0,370" Click="btnAceptar_Click"/>
+
+        <Label Content="Descripción:" Width="75" Height="25" Margin="84,52,108,372" Grid.Column="0"/>
+        <TextBox x:Name="txtDesc" Height="25" Width="600" Margin="160,0,0,320" Grid.ColumnSpan="3"/>
+
+        <Label Content="Fecha:" Width="50" Height="25" Margin="109,92,108,332"/>
+        <DatePicker x:Name="dtpFecha" Width="300" Height="25" Margin="130,0,0,240" Grid.ColumnSpan="2" />
+
+        <CheckBox x:Name="cbCerrada" Content="Cerrada" Width="65" Height="25" Margin="218,98,250,326" Grid.Column="1" Grid.ColumnSpan="2"/>
+
+        <Label Content="Etiqueta:" Width="55" Height="25" Margin="104,123,108,302" />
+        <TextBox x:Name="txtEtiqueta" Width="300" Height="25" Margin="130,0,0,180" Grid.ColumnSpan="2"/>
+
+        <CheckBox x:Name="cbEnciende" Content="Enciende" Width="70" Height="25" Margin="218,128,245,296" Grid.Column="1" Grid.ColumnSpan="2"/>
+
+        <Label Content="Clase" Width="40" Height="25" Margin="0,0,670,120" />
+
+
+        <RadioButton x:Name="rbTorre" GroupName="clase" Height="20" Width="45" Margin="0,0,670,70" Tag="torre">Torre</RadioButton>
+        <RadioButton x:Name="rbImpresora" GroupName="clase" Height="20" Width="80"  Margin="0,0,520,70" Tag="impresora">Impresora</RadioButton>
+        <RadioButton x:Name="rbRed" GroupName="clase" Height="20" Width="45"  Margin="0,0,390,70" Tag="red">Red</RadioButton>
+
+        <Label Content="Observaciones" Height="25" Width="90" Margin="0,0,80,20"/>
+
+        <TextBox x:Name="txtObserv" Width="700" Height="190" Margin="0,200,0,0" Grid.ColumnSpan="3"/>
+
     </Grid>
 </UserControl>

@@ -32,7 +32,7 @@ namespace UTR_E10.WPF.Aplicación_de_gestión
         {
             this.lvIncidencias.Items.Clear();
 
-            _negocio.ObtenerIncidencias().ToList().ForEach(res =>
+            _negocio.ObtenerIncidencias().ToList.ForEach(res =>
             {
                 this.lvIncidencias.Items.Add(new Incidencia
                 {
@@ -43,29 +43,26 @@ namespace UTR_E10.WPF.Aplicación_de_gestión
                 );
             });
 
-        }
-        */
+        }*/
 
         private void btnHardware_Click(object sender, RoutedEventArgs e)
         {
             IncidenciaHW inHardware = new IncidenciaHW();
-            UCIncidenciaHW uCIncidenciaHW = new UCIncidenciaHW(inHardware);
-
-            uCIncidenciaHW.Show();
+            
+                _negocio.CrearIncidenciaHW(inHardware);
+                //RefrescarLista();
         }
 
         private void btnSoftware_Click(object sender, RoutedEventArgs e)
         {
-            UCIncidenciasSF uCIncidenciaSF = new UCIncidenciasSF();
+            UCIncidenciaSF uCIncidenciaSF = new UCIncidenciaSF();
 
-            uCIncidenciaSF.Show();
         }
 
         private void btnOtros_Click(object sender, RoutedEventArgs e)
         {
             UCIncidenciaOtros uCIncidenciaOtros = new UCIncidenciaOtros();
 
-            uCIncidenciaOtros.Show();
         }
 
         private void btnBuscar_Click(object sender, RoutedEventArgs e)
@@ -87,5 +84,8 @@ namespace UTR_E10.WPF.Aplicación_de_gestión
                 };
             }
         }
+
     }
+
+
 }
